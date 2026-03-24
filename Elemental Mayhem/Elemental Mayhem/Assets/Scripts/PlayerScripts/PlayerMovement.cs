@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
 
     private Rigidbody2D rb;
+    public Animator animator;
 
     private float moveInput;
     [SerializeField]private float downInput;
@@ -44,6 +46,10 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = gravityScale;
     }
 
+    private void Update()
+    {
+        UpdateAnimations();
+    }
 
     private void FixedUpdate()
     {
@@ -57,6 +63,31 @@ public class PlayerMovement : MonoBehaviour
         HandleMovement();
         HandleBetterJump();
         HandleJump();
+    }
+
+
+    void UpdateAnimations()
+    {
+        if (rb.linearVelocityX != 0)
+        {
+            animator.SetFloat("HorizontalVelocity",1);
+        }
+        else
+        {
+            animator.SetFloat("HorizontalVelocity", 0);
+        }
+
+        if (rb.linearVelocityY < 0)
+        {
+            animator.SetFloat("VerticalVelocity", -1);
+        }
+        else if (rb.linearVelocityY > 0)
+        {
+            animator.SetFloat("VerticalVelocity", 1);
+        }
+
+        animator.SetBool("isGrounded", isGrounded);
+
     }
 
     public void MovementInput(InputAction.CallbackContext context)
@@ -106,12 +137,29 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.linearVelocity = new Vector2(currentVelocityX, rb.linearVelocity.y);
+
+        if (moveInput > 0f)
+        {
+            transform.localScale = new Vector3(1,1,1);
+        }
+        else if (moveInput < 0f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 
     void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+        animator.SetTrigger("Jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        StartCoroutine(ClearJumpTrigger());
+    }
+
+    IEnumerator ClearJumpTrigger()
+    {
+        yield return new WaitForSeconds(jumpBufferTime);
+        animator.ResetTrigger("Jump");
     }
 
     void HandleBetterJump()
@@ -142,6 +190,11 @@ public class PlayerMovement : MonoBehaviour
         {
             coyoteTimeCounter -= Time.fixedDeltaTime;
         }
+    }
+
+    public bool IsGrounded()
+    {
+        return isGrounded;
     }
 
     private void OnDrawGizmos()
