@@ -18,6 +18,14 @@ public class PlayerCombat : MonoBehaviour
     [Header("Air Attack")]
     public int airAttackIndex = 0;
 
+    [Header("Special Attack")]
+    public bool isChargeSpecial = false;
+
+    private bool isCharging = false;
+
+    [Header("Blocking")]
+    public bool isBlocking = false;
+
     // Internal State
     [SerializeField]private int currentAttackIndex = 0;
     private bool isAttacking = false;
@@ -30,6 +38,9 @@ public class PlayerCombat : MonoBehaviour
     //Get player Input
     public void AttackInput(InputAction.CallbackContext context)
     {
+        if (isBlocking)
+            return;
+
         if (!context.performed)
             return;
 
@@ -50,6 +61,94 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    public void BlockInput(InputAction.CallbackContext context)
+    {
+        if (!movement.IsGrounded())
+        {
+            return;
+        }
+
+        if (context.started)
+        {
+            StartBlock();
+        }
+        else if (context.canceled)
+        {
+            Debug.Log("Release Block Function Called");
+            EndBlock();
+        }
+    }
+
+    public void SpecialInput(InputAction.CallbackContext context)
+    {
+        if (isBlocking)
+            return;
+
+        if (!isChargeSpecial)
+        {
+            if (context.performed)
+            {
+                DoSpecial();
+            }
+        }
+        else
+        {
+            Debug.Log("Special Charging in progress");
+            if (context.started && !isAttacking)
+            {
+                StartCharge();
+            }
+            else if (context.canceled && isCharging)
+            {
+                Debug.Log("Release Charge Function Called");
+                ReleaseCharge();
+            }
+        }
+    }
+
+    void DoSpecial()
+    {
+        isAttacking = true;
+        animator.SetTrigger("Special");
+    }
+
+    void StartCharge()
+    {
+        if (isAttacking)
+            return;
+
+        isCharging = true;
+        isAttacking = true;
+
+        animator.SetBool("IsCharging", true);
+    }
+
+    void ReleaseCharge()
+    {
+        Debug.Log("Release Charge Function");
+        if (!isCharging)
+            return;
+
+        isCharging = false;
+
+        animator.SetBool("IsCharging", false);
+        animator.SetTrigger("ReleaseSpecial");
+    }
+
+    void StartBlock()
+    {
+        if (isAttacking)
+            return;
+
+        isBlocking = true;
+        animator.SetBool("IsBlocking", true);
+    }
+
+    void EndBlock()
+    {
+        isBlocking = false;
+        animator.SetBool("IsBlocking", false);
+    }
 
     //Combo based attacking
     void HandleComboInput()

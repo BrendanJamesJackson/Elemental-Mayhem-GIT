@@ -808,6 +808,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: fbbe4c2d-208f-45af-a0fc-5453b0a9c0d1
     m_ActionName: 'Player/Attack[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1457126394}
+        m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+        m_MethodName: BlockInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 884a9fd7-7da1-4556-9b07-de305d3aa046
+    m_ActionName: 'Player/Block[/Keyboard/tab]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1457126394}
+        m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+        m_MethodName: SpecialInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 76f896a8-c87d-47b7-ba57-39f7581696cf
+    m_ActionName: 'Player/SpecialAttack[/Mouse/rightButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -867,6 +899,9 @@ MonoBehaviour:
   - 10
   - 15
   airAttackIndex: 0
+  isChargeSpecial: 1
+  isBlocking: 0
+  currentAttackIndex: 0
 --- !u!114 &1457126395
 MonoBehaviour:
   m_ObjectHideFlags: 0
