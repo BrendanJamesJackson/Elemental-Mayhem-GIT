@@ -29,8 +29,19 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
+    [Header("Dash / Roll")]
+    public bool hasDash = false;
+    public bool hasRoll = false;
+
+    public float dashSpeed = 15f;
+    public float rollSpeed = 12f;
+
+    private bool isDashing = false;
+    private bool isRolling = false;
+
     private Rigidbody2D rb;
     public Animator animator;
+    public PlayerCombat playerCombat;
 
     private float moveInput;
     [SerializeField]private float downInput;
@@ -104,6 +115,22 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void DashInput(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+
+        TryDashOrRoll(isDashInput: true);
+    }
+
+    public void RollInput(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+
+        TryDashOrRoll(isDashInput: false);
+    }
+
     void HandleJump()
     {
         if (!canMove)
@@ -123,7 +150,18 @@ public class PlayerMovement : MonoBehaviour
         if (!canMove)
             return;
 
-        float targetSpeed = moveInput * moveSpeed;
+        int moveInputFixed = 0;
+
+        if (moveInput > 0)
+        {
+            moveInputFixed = 1;
+        }
+        else if (moveInput < 0)
+        {
+            moveInputFixed = -1;
+        }
+
+        float targetSpeed = moveInputFixed * moveSpeed;
 
         float accelRate = isGrounded ? acceleration : acceleration * airControlMultiplier;
 
@@ -195,6 +233,59 @@ public class PlayerMovement : MonoBehaviour
     public bool IsGrounded()
     {
         return isGrounded;
+    }
+
+    void TryDashOrRoll(bool isDashInput)
+    {
+        // Prevent overlap with other states
+        if (!isGrounded || isDashing || isRolling || playerCombat.IsAttacking())
+            return;
+
+        if (isDashInput)
+        {
+            if (hasDash)
+                StartDash();
+            else if (hasRoll)
+                StartRoll(); // fallback
+        }
+        else
+        {
+            if (hasRoll)
+                StartRoll();
+            else if (hasDash)
+                StartDash(); // fallback
+        }
+    }
+
+    void StartDash()
+    {
+        isDashing = true;
+        canMove = false;
+
+        float direction = Mathf.Sign(transform.localScale.x);
+        rb.linearVelocity = new Vector2(direction * dashSpeed, 0f);
+
+        animator.SetTrigger("Dash");
+    }
+
+    void StartRoll()
+    {
+        isRolling = true;
+        canMove = false;
+
+        float direction = Mathf.Sign(transform.localScale.x);
+        rb.linearVelocity = new Vector2(direction * rollSpeed, 0f);
+
+        animator.SetTrigger("Roll");
+    }
+
+    public void EndMovementAbility()
+    {
+        isDashing = false;
+        isRolling = false;
+        canMove = true;
+
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
     }
 
     private void OnDrawGizmos()

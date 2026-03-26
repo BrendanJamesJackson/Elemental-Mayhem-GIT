@@ -5,11 +5,11 @@ public class Hitbox : MonoBehaviour
     public float damage = 10f;
     public float knockbackForce = 10f;
 
-    private GameObject owner;
+    public GameObject owner;
 
     public void Initialize(GameObject attacker)
     {
-        owner = attacker;
+        //owner = attacker;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -8,6 +8,8 @@ public class KnockbackReceiver : MonoBehaviour
 
     public float hitstunDuration = 0.2f;
     public float hitstopDuration = 5f;
+    public float hitstopShake = 0.05f;
+    public bool isShaking = false;
 
     private void Awake()
     {
@@ -43,6 +45,14 @@ public class KnockbackReceiver : MonoBehaviour
             movement.canMove = true;
     }
 
+    private void Update()
+    {
+        if (isShaking)
+        {
+            transform.position += (Vector3)Random.insideUnitCircle * hitstopShake;
+        }
+    }
+
     IEnumerator DoHitStop(PlayerMovement attackerMovement)
     {
         //Vector2 originalVelocity = rb.linearVelocity;
@@ -56,19 +66,26 @@ public class KnockbackReceiver : MonoBehaviour
 
         if (movement != null)
             movement.canMove = false;
+        this.GetComponent<Animator>().speed = 0;
+        this.GetComponent<Animator>().SetTrigger("Hit");
 
         if (attackerMovement != null)
             attackerMovement.canMove = false;
+        attackerMovement.gameObject.GetComponent<Animator>().speed = 0;
 
-        transform.position += (Vector3)Random.insideUnitCircle * 0.05f;
+        isShaking = true;
 
         yield return new WaitForSeconds(hitstopDuration);
 
+        isShaking = false;
+
         if (movement != null)
             movement.canMove = true;
+        this.GetComponent<Animator>().speed = 1;
 
         if (attackerMovement != null)
             attackerMovement.canMove = true;
+        attackerMovement.gameObject.GetComponent<Animator>().speed = 1;
 
     }
 }

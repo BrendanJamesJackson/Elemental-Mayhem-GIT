@@ -28,12 +28,16 @@ public class PlayerCombat : MonoBehaviour
 
     // Internal State
     [SerializeField]private int currentAttackIndex = 0;
-    private bool isAttacking = false;
+    [SerializeField]private bool isAttacking = false;
 
     // Combo System
     private bool canCombo = false;
     private bool queueNextAttack = false;
 
+    public bool IsAttacking()
+    {
+        return isAttacking;
+    }
 
     //Get player Input
     public void AttackInput(InputAction.CallbackContext context)
@@ -81,12 +85,12 @@ public class PlayerCombat : MonoBehaviour
 
     public void SpecialInput(InputAction.CallbackContext context)
     {
-        if (isBlocking)
+        if (isBlocking || !movement.IsGrounded())
             return;
 
         if (!isChargeSpecial)
         {
-            if (context.performed)
+            if (context.performed && !isAttacking)
             {
                 DoSpecial();
             }
