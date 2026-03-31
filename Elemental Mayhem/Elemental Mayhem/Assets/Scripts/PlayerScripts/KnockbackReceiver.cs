@@ -27,6 +27,16 @@ public class KnockbackReceiver : MonoBehaviour
     {
         PlayerMovement attackerMovement = attacker.GetComponent<PlayerMovement>();
 
+        if (direction.x < 0)
+        {
+            this.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (direction.x > 0)
+        {
+            this.transform.localScale = new Vector3(-1, 1, 1);
+
+        }
+
         yield return StartCoroutine(DoHitStop(attackerMovement));
 
         // Disable movement

@@ -6,6 +6,7 @@ public class Hitbox : MonoBehaviour
     public float knockbackForce = 10f;
 
     public GameObject owner;
+    public PlayerCombat playerCombat;
 
     public void Initialize(GameObject attacker)
     {
@@ -19,13 +20,22 @@ public class Hitbox : MonoBehaviour
             return;
         }
 
-        KnockbackReceiver receiver = collision.GetComponent<KnockbackReceiver>();
+        Debug.Log("Hitbox land");
 
-        if (receiver != null)
+        PlayerManager pm = collision.GetComponent<PlayerManager>();
+
+        if (pm != null)
         {
             Vector2 direction = (collision.transform.position - owner.transform.position).normalized;
-            receiver.ApplyKnockback(direction, knockbackForce, owner);
+
+
+            pm.TakeHit(
+                playerCombat.GetDamage(),
+                playerCombat.GetKnockback(),
+                direction,
+                owner
+            );
         }
-        
+
     }
 }

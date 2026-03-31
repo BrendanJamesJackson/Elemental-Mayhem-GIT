@@ -15,8 +15,10 @@ public class PlayerCombat : MonoBehaviour
     public float[] damage;
     public float[] knockback;
 
-    [Header("Air Attack")]
-    public int airAttackIndex = 0;
+    [Header("Attack Indices")]
+    public int airAttackIndex = 3;
+    public int specialAttackIndex = 4;
+
 
     [Header("Special Attack")]
     public bool isChargeSpecial = false;
@@ -113,6 +115,7 @@ public class PlayerCombat : MonoBehaviour
     void DoSpecial()
     {
         isAttacking = true;
+        currentAttackIndex = specialAttackIndex;
         animator.SetTrigger("Special");
     }
 
@@ -134,6 +137,7 @@ public class PlayerCombat : MonoBehaviour
             return;
 
         isCharging = false;
+        currentAttackIndex = specialAttackIndex;
 
         animator.SetBool("IsCharging", false);
         animator.SetTrigger("ReleaseSpecial");
@@ -184,7 +188,7 @@ public class PlayerCombat : MonoBehaviour
             currentAttackIndex++;
 
             // Clamp to array size
-            if (currentAttackIndex >= damage.Length)
+            if (currentAttackIndex >= 3)
                 currentAttackIndex = 0;
 
             TriggerAttack(currentAttackIndex);
