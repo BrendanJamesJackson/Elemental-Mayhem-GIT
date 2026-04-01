@@ -43,6 +43,8 @@ public class KnockbackReceiver : MonoBehaviour
         if (movement != null)
             movement.canMove = false;
 
+        direction.y = .5f;
+
         // Apply knockback
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(direction * force, ForceMode2D.Impulse);

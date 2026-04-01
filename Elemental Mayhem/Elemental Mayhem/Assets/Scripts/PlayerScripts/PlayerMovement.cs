@@ -76,6 +76,15 @@ public class PlayerMovement : MonoBehaviour
         HandleJump();
     }
 
+    public void EnableMovement()
+    {
+        canMove = true;
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;
+    }
 
     void UpdateAnimations()
     {
@@ -148,7 +157,11 @@ public class PlayerMovement : MonoBehaviour
     void HandleMovement()
     {
         if (!canMove)
+        {
+            //rb.linearVelocityX = 0f;
             return;
+        }
+            
 
         int moveInputFixed = 0;
 
@@ -172,6 +185,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             currentVelocityX = Mathf.MoveTowards(rb.linearVelocity.x, 0, deceleration * Time.fixedDeltaTime);
+            //currentVelocityX = 0f;
         }
 
         rb.linearVelocity = new Vector2(currentVelocityX, rb.linearVelocity.y);
