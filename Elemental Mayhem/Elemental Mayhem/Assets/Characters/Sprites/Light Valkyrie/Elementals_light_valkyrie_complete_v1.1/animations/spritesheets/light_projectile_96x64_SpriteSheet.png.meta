@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 09b2e6cb7454b754c85fdcfc0f237e7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4560481077029434674
+    second: light_projectile_96x64_SpriteSheet_0
+  - first:
+      213: -8706353070054244172
+    second: light_projectile_96x64_SpriteSheet_1
+  - first:
+      213: -4986002600217120839
+    second: light_projectile_96x64_SpriteSheet_2
+  - first:
+      213: -5839084843843376084
+    second: light_projectile_96x64_SpriteSheet_3
+  - first:
+      213: -2504244199592155467
+    second: light_projectile_96x64_SpriteSheet_4
+  - first:
+      213: 202169201099207376
+    second: light_projectile_96x64_SpriteSheet_5
+  - first:
+      213: 932867993597084531
+    second: light_projectile_96x64_SpriteSheet_6
+  - first:
+      213: -8044666602512802350
+    second: light_projectile_96x64_SpriteSheet_7
+  - first:
+      213: -8790076307360841958
+    second: light_projectile_96x64_SpriteSheet_8
+  - first:
+      213: -3790265073970136851
+    second: light_projectile_96x64_SpriteSheet_9
+  - first:
+      213: -5144576290317356497
+    second: light_projectile_96x64_SpriteSheet_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 151
+        width: 75
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca05c67f9ae5b0c0800000000000000
+      internalID: -4560481077029434674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 79
+        width: 82
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b00942d202dc2780800000000000000
+      internalID: -8706353070054244172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 82
+        width: 81
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf62e45d092ecab0800000000000000
+      internalID: -4986002600217120839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 81
+        width: 80
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c2955754767fea0800000000000000
+      internalID: -5839084843843376084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 22
+        width: 66
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b62a742b232f3dd0800000000000000
+      internalID: -2504244199592155467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 23
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2fa0831df3ec200800000000000000
+      internalID: 202169201099207376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 23
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3738fa46f7632fc00800000000000000
+      internalID: 932867993597084531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 23
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd96c4f85a9b5090800000000000000
+      internalID: -8044666602512802350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 23
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ffd279b20630680800000000000000
+      internalID: -8790076307360841958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 23
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8b0753ff5466bc0800000000000000
+      internalID: -3790265073970136851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_projectile_96x64_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 23
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22bcbffe1bca98b0800000000000000
+      internalID: -5144576290317356497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      light_projectile_96x64_SpriteSheet_0: -4560481077029434674
+      light_projectile_96x64_SpriteSheet_1: -8706353070054244172
+      light_projectile_96x64_SpriteSheet_10: -5144576290317356497
+      light_projectile_96x64_SpriteSheet_2: -4986002600217120839
+      light_projectile_96x64_SpriteSheet_3: -5839084843843376084
+      light_projectile_96x64_SpriteSheet_4: -2504244199592155467
+      light_projectile_96x64_SpriteSheet_5: 202169201099207376
+      light_projectile_96x64_SpriteSheet_6: 932867993597084531
+      light_projectile_96x64_SpriteSheet_7: -8044666602512802350
+      light_projectile_96x64_SpriteSheet_8: -8790076307360841958
+      light_projectile_96x64_SpriteSheet_9: -3790265073970136851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

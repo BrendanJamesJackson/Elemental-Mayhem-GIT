@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: d2bbe0dead98aa84ba5c23e9f6140cd7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8155662358099157214
+    second: light_sp_atk_vfx_160x128_SpriteSheet_0
+  - first:
+      213: 4577982006193372686
+    second: light_sp_atk_vfx_160x128_SpriteSheet_1
+  - first:
+      213: 1686777734061060208
+    second: light_sp_atk_vfx_160x128_SpriteSheet_2
+  - first:
+      213: -344595641170404581
+    second: light_sp_atk_vfx_160x128_SpriteSheet_3
+  - first:
+      213: 8057034231910005731
+    second: light_sp_atk_vfx_160x128_SpriteSheet_4
+  - first:
+      213: -5337669569128029255
+    second: light_sp_atk_vfx_160x128_SpriteSheet_5
+  - first:
+      213: 203425441533007324
+    second: light_sp_atk_vfx_160x128_SpriteSheet_6
+  - first:
+      213: -5948728507731857042
+    second: light_sp_atk_vfx_160x128_SpriteSheet_7
+  - first:
+      213: -7154858565153160850
+    second: light_sp_atk_vfx_160x128_SpriteSheet_8
+  - first:
+      213: 5091043855738234936
+    second: light_sp_atk_vfx_160x128_SpriteSheet_9
+  - first:
+      213: -7641612452108225548
+    second: light_sp_atk_vfx_160x128_SpriteSheet_10
+  - first:
+      213: -477289040407209106
+    second: light_sp_atk_vfx_160x128_SpriteSheet_11
+  - first:
+      213: -1695474559026455664
+    second: light_sp_atk_vfx_160x128_SpriteSheet_12
+  - first:
+      213: -2667282358881886330
+    second: light_sp_atk_vfx_160x128_SpriteSheet_13
+  - first:
+      213: 3314020839669856506
+    second: light_sp_atk_vfx_160x128_SpriteSheet_14
+  - first:
+      213: -5330772411531025971
+    second: light_sp_atk_vfx_160x128_SpriteSheet_15
+  - first:
+      213: 3795637570216731411
+    second: light_sp_atk_vfx_160x128_SpriteSheet_16
+  - first:
+      213: 1489187057361516274
+    second: light_sp_atk_vfx_160x128_SpriteSheet_17
+  - first:
+      213: -3035886010455841460
+    second: light_sp_atk_vfx_160x128_SpriteSheet_18
+  - first:
+      213: 167777846576675972
+    second: light_sp_atk_vfx_160x128_SpriteSheet_19
+  - first:
+      213: 928899400740597964
+    second: light_sp_atk_vfx_160x128_SpriteSheet_20
+  - first:
+      213: -649867617741481043
+    second: light_sp_atk_vfx_160x128_SpriteSheet_21
+  - first:
+      213: 6730487905552831677
+    second: light_sp_atk_vfx_160x128_SpriteSheet_22
+  - first:
+      213: -7581974444187867318
+    second: light_sp_atk_vfx_160x128_SpriteSheet_23
+  - first:
+      213: 1843896702125256832
+    second: light_sp_atk_vfx_160x128_SpriteSheet_24
+  - first:
+      213: -3903330773017965994
+    second: light_sp_atk_vfx_160x128_SpriteSheet_25
+  - first:
+      213: -8411028121566726214
+    second: light_sp_atk_vfx_160x128_SpriteSheet_26
+  - first:
+      213: -857186695319093214
+    second: light_sp_atk_vfx_160x128_SpriteSheet_27
+  - first:
+      213: -4154805296031811259
+    second: light_sp_atk_vfx_160x128_SpriteSheet_28
+  - first:
+      213: 2625669976407464040
+    second: light_sp_atk_vfx_160x128_SpriteSheet_29
+  - first:
+      213: 3190290603081240862
+    second: light_sp_atk_vfx_160x128_SpriteSheet_30
+  - first:
+      213: -6976437797606747377
+    second: light_sp_atk_vfx_160x128_SpriteSheet_31
+  - first:
+      213: 1083916504918278335
+    second: light_sp_atk_vfx_160x128_SpriteSheet_32
+  - first:
+      213: -3186790305390827094
+    second: light_sp_atk_vfx_160x128_SpriteSheet_33
+  - first:
+      213: -994375936059214538
+    second: light_sp_atk_vfx_160x128_SpriteSheet_34
+  - first:
+      213: 5641812962120591205
+    second: light_sp_atk_vfx_160x128_SpriteSheet_35
+  - first:
+      213: 6469263097954049329
+    second: light_sp_atk_vfx_160x128_SpriteSheet_36
+  - first:
+      213: -4202914355321799866
+    second: light_sp_atk_vfx_160x128_SpriteSheet_37
+  - first:
+      213: -6632099873624906361
+    second: light_sp_atk_vfx_160x128_SpriteSheet_38
+  - first:
+      213: -8677693175800953154
+    second: light_sp_atk_vfx_160x128_SpriteSheet_39
+  - first:
+      213: -7485084108333022571
+    second: light_sp_atk_vfx_160x128_SpriteSheet_40
+  - first:
+      213: -3999153199482976459
+    second: light_sp_atk_vfx_160x128_SpriteSheet_41
+  - first:
+      213: -2055747235504191235
+    second: light_sp_atk_vfx_160x128_SpriteSheet_42
+  - first:
+      213: -4855704530316139589
+    second: light_sp_atk_vfx_160x128_SpriteSheet_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 25
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f997dbb4441de80800000000000000
+      internalID: -8155662358099157214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 51
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e39432162488f30800000000000000
+      internalID: 4577982006193372686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 70
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0707fb58963a86710800000000000000
+      internalID: 1686777734061060208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bd3e01710c73bf0800000000000000
+      internalID: -344595641170404581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 0
+        width: 65
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb782822f550df60800000000000000
+      internalID: 8057034231910005731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 44
+        width: 14
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b326bb9ec9cce5b0800000000000000
+      internalID: -5337669569128029255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd51adc7c56b2d200800000000000000
+      internalID: 203425441533007324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 0
+        width: 65
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61376f90fed17da0800000000000000
+      internalID: -5948728507731857042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 44
+        width: 14
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6182e50b06d4bc90800000000000000
+      internalID: -7154858565153160850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 44
+        width: 14
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838663dc96507a640800000000000000
+      internalID: 5091043855738234936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 0
+        width: 26
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f333e836f983f590800000000000000
+      internalID: -7641612452108225548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 0
+        width: 47
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b575385245069f0800000000000000
+      internalID: -477289040407209106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 38
+        width: 32
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b148f1fd67878e0800000000000000
+      internalID: -1695474559026455664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 44
+        width: 18
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fdd2393d8ebfad0800000000000000
+      internalID: -2667282358881886330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 49
+        width: 14
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af873ce2564cdfd20800000000000000
+      internalID: 3314020839669856506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 0
+        width: 50
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1ad304cba4506b0800000000000000
+      internalID: -5330772411531025971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 39
+        width: 32
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31325ec8240dca430800000000000000
+      internalID: 3795637570216731411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 45
+        width: 18
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f674261db7aaa410800000000000000
+      internalID: 1489187057361516274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 50
+        width: 14
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45a33022cd5ed5d0800000000000000
+      internalID: -3035886010455841460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 51
+        width: 22
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48cf1620011145200800000000000000
+      internalID: 167777846576675972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 0
+        width: 31
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0773d551d14ec00800000000000000
+      internalID: 928899400740597964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 39
+        width: 32
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab5d7548d43bf6f0800000000000000
+      internalID: -649867617741481043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 45
+        width: 18
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db41a87271f776d50800000000000000
+      internalID: 6730487905552831677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 50
+        width: 14
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47a71ef96a67c690800000000000000
+      internalID: -7581974444187867318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 51
+        width: 22
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080b0bcf746d69910800000000000000
+      internalID: 1843896702125256832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 50
+        width: 27
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ac969b75594d9c0800000000000000
+      internalID: -3903330773017965994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 30
+        width: 32
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7b13aac76064b80800000000000000
+      internalID: -8411028121566726214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 35
+        width: 18
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220805ffd39aa14f0800000000000000
+      internalID: -857186695319093214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 44
+        width: 14
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549bc1ba89a2756c0800000000000000
+      internalID: -4154805296031811259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 41
+        width: 22
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868dc21aee0407420800000000000000
+      internalID: 2625669976407464040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 37
+        width: 27
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e119cee8660364c20800000000000000
+      internalID: 3190290603081240862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f039a0c29c6be2f90800000000000000
+      internalID: -6976437797606747377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 0
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb046d18158da0f00800000000000000
+      internalID: 1083916504918278335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 0
+        width: 26
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa965810a1f36c3d0800000000000000
+      internalID: -3186790305390827094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 0
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6357ef5ca544332f0800000000000000
+      internalID: -994375936059214538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56764685ffebb4e40800000000000000
+      internalID: 5641812962120591205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 0
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d1810138077c950800000000000000
+      internalID: 6469263097954049329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 0
+        width: 26
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b77ad69af3ca5c0800000000000000
+      internalID: -4202914355321799866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 0
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785aca5ad4c06f3a0800000000000000
+      internalID: -6632099873624906361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb68d827804a29780800000000000000
+      internalID: -8677693175800953154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 0
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59283e049a3af1890800000000000000
+      internalID: -7485084108333022571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 0
+        width: 26
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537437e7a572088c0800000000000000
+      internalID: -3999153199482976459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 0
+        width: 666
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df808c7f7c48873e0800000000000000
+      internalID: -2055747235504191235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_sp_atk_vfx_160x128_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb36040d4721d9cb0800000000000000
+      internalID: -4855704530316139589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      light_sp_atk_vfx_160x128_SpriteSheet_0: -8155662358099157214
+      light_sp_atk_vfx_160x128_SpriteSheet_1: 4577982006193372686
+      light_sp_atk_vfx_160x128_SpriteSheet_10: -7641612452108225548
+      light_sp_atk_vfx_160x128_SpriteSheet_11: -477289040407209106
+      light_sp_atk_vfx_160x128_SpriteSheet_12: -1695474559026455664
+      light_sp_atk_vfx_160x128_SpriteSheet_13: -2667282358881886330
+      light_sp_atk_vfx_160x128_SpriteSheet_14: 3314020839669856506
+      light_sp_atk_vfx_160x128_SpriteSheet_15: -5330772411531025971
+      light_sp_atk_vfx_160x128_SpriteSheet_16: 3795637570216731411
+      light_sp_atk_vfx_160x128_SpriteSheet_17: 1489187057361516274
+      light_sp_atk_vfx_160x128_SpriteSheet_18: -3035886010455841460
+      light_sp_atk_vfx_160x128_SpriteSheet_19: 167777846576675972
+      light_sp_atk_vfx_160x128_SpriteSheet_2: 1686777734061060208
+      light_sp_atk_vfx_160x128_SpriteSheet_20: 928899400740597964
+      light_sp_atk_vfx_160x128_SpriteSheet_21: -649867617741481043
+      light_sp_atk_vfx_160x128_SpriteSheet_22: 6730487905552831677
+      light_sp_atk_vfx_160x128_SpriteSheet_23: -7581974444187867318
+      light_sp_atk_vfx_160x128_SpriteSheet_24: 1843896702125256832
+      light_sp_atk_vfx_160x128_SpriteSheet_25: -3903330773017965994
+      light_sp_atk_vfx_160x128_SpriteSheet_26: -8411028121566726214
+      light_sp_atk_vfx_160x128_SpriteSheet_27: -857186695319093214
+      light_sp_atk_vfx_160x128_SpriteSheet_28: -4154805296031811259
+      light_sp_atk_vfx_160x128_SpriteSheet_29: 2625669976407464040
+      light_sp_atk_vfx_160x128_SpriteSheet_3: -344595641170404581
+      light_sp_atk_vfx_160x128_SpriteSheet_30: 3190290603081240862
+      light_sp_atk_vfx_160x128_SpriteSheet_31: -6976437797606747377
+      light_sp_atk_vfx_160x128_SpriteSheet_32: 1083916504918278335
+      light_sp_atk_vfx_160x128_SpriteSheet_33: -3186790305390827094
+      light_sp_atk_vfx_160x128_SpriteSheet_34: -994375936059214538
+      light_sp_atk_vfx_160x128_SpriteSheet_35: 5641812962120591205
+      light_sp_atk_vfx_160x128_SpriteSheet_36: 6469263097954049329
+      light_sp_atk_vfx_160x128_SpriteSheet_37: -4202914355321799866
+      light_sp_atk_vfx_160x128_SpriteSheet_38: -6632099873624906361
+      light_sp_atk_vfx_160x128_SpriteSheet_39: -8677693175800953154
+      light_sp_atk_vfx_160x128_SpriteSheet_4: 8057034231910005731
+      light_sp_atk_vfx_160x128_SpriteSheet_40: -7485084108333022571
+      light_sp_atk_vfx_160x128_SpriteSheet_41: -3999153199482976459
+      light_sp_atk_vfx_160x128_SpriteSheet_42: -2055747235504191235
+      light_sp_atk_vfx_160x128_SpriteSheet_43: -4855704530316139589
+      light_sp_atk_vfx_160x128_SpriteSheet_5: -5337669569128029255
+      light_sp_atk_vfx_160x128_SpriteSheet_6: 203425441533007324
+      light_sp_atk_vfx_160x128_SpriteSheet_7: -5948728507731857042
+      light_sp_atk_vfx_160x128_SpriteSheet_8: -7154858565153160850
+      light_sp_atk_vfx_160x128_SpriteSheet_9: 5091043855738234936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

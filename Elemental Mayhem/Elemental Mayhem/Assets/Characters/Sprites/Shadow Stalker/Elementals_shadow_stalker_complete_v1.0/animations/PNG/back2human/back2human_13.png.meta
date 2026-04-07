@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 2da51c2af5544e44dbef18a3b0b74bc4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8134613751833503191
+    second: back2human_13_0
+  - first:
+      213: -5297739793017628800
+    second: back2human_13_1
+  - first:
+      213: 3692546018407876922
+    second: back2human_13_2
+  - first:
+      213: -4722322147700765128
+    second: back2human_13_3
+  - first:
+      213: 2881523717230211797
+    second: back2human_13_4
+  - first:
+      213: 6146050208382268188
+    second: back2human_13_5
+  - first:
+      213: 3002311739993194900
+    second: back2human_13_6
+  - first:
+      213: 293101543548621826
+    second: back2human_13_7
+  - first:
+      213: -227392879380499627
+    second: back2human_13_8
+  - first:
+      213: -6517297836087172701
+    second: back2human_13_9
+  - first:
+      213: 341751239046204307
+    second: back2human_13_10
+  - first:
+      213: -8792448266778208768
+    second: back2human_13_11
+  - first:
+      213: -7568342600071881465
+    second: back2human_13_12
+  - first:
+      213: -3960259569155885595
+    second: back2human_13_13
+  - first:
+      213: -360171933112511588
+    second: back2human_13_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: back2human_13_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 98
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ad4f844eb0c1f80800000000000000
+      internalID: -8134613751833503191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 103
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0879bb41ab5aa76b0800000000000000
+      internalID: -5297739793017628800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 82
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a390cff2a0f8e3330800000000000000
+      internalID: 3692546018407876922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e065fc601f67eb0800000000000000
+      internalID: -4722322147700765128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 80
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2be59cd8a3df720800000000000000
+      internalID: 2881523717230211797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c133752f9182b4550800000000000000
+      internalID: 6146050208382268188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 80
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491874fde9a5aa920800000000000000
+      internalID: 3002311739993194900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204955a0d4e411400800000000000000
+      internalID: 293101543548621826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 43
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5537218816328dcf0800000000000000
+      internalID: -227392879380499627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_9
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 36
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a12a90f528ed85a0800000000000000
+      internalID: -6517297836087172701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 20
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b06e4f0f42eb400800000000000000
+      internalID: 341751239046204307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_11
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 17
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0069fa0c2e2faf580800000000000000
+      internalID: -8792448266778208768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 18
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d52480188d7f690800000000000000
+      internalID: -7568342600071881465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 8
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e53f1a77e45a09c0800000000000000
+      internalID: -3960259569155885595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back2human_13_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9353ccf889600bf0800000000000000
+      internalID: -360171933112511588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      back2human_13_0: -8134613751833503191
+      back2human_13_1: -5297739793017628800
+      back2human_13_10: 341751239046204307
+      back2human_13_11: -8792448266778208768
+      back2human_13_12: -7568342600071881465
+      back2human_13_13: -3960259569155885595
+      back2human_13_14: -360171933112511588
+      back2human_13_2: 3692546018407876922
+      back2human_13_3: -4722322147700765128
+      back2human_13_4: 2881523717230211797
+      back2human_13_5: 6146050208382268188
+      back2human_13_6: 3002311739993194900
+      back2human_13_7: 293101543548621826
+      back2human_13_8: -227392879380499627
+      back2human_13_9: -6517297836087172701
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
