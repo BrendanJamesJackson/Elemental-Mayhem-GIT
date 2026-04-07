@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float deceleration = 80f;
     public float airControlMultiplier = 0.6f;
     public bool canMove = true;
+    public bool isInHitstun = false;
 
     [Header("Jump")]
     public float jumpForce = 14f;
@@ -23,6 +24,12 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Fast Fall")]
     public float fastFallSpeed = 20f;
+
+    [Header("Double Jump")]
+    public int maxJumps = 2;
+
+    private int jumpsUsed = 0;
+    private bool hasDoubleJumped = false;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -84,6 +91,8 @@ public class PlayerMovement : MonoBehaviour
     public void DisableMovement()
     {
         canMove = false;
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        currentVelocityX = 0f;
     }
 
     void UpdateAnimations()
@@ -142,26 +151,52 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJump()
     {
-        if (!canMove)
+        if (!canMove || isInHitstun)
             return;
 
-        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
+        if (jumpBufferCounter > 0f)
         {
-            Jump();
-            coyoteTimeCounter = 0f;
-            jumpBufferCounter = 0f;
+            // FIRST JUMP (ground or coyote)
+            if (coyoteTimeCounter > 0f)
+            {
+                Jump();
+                jumpsUsed = 1;
+                coyoteTimeCounter = 0f;
+                jumpBufferCounter = 0f;
+            }
+            // DOUBLE JUMP
+            else if (jumpsUsed < maxJumps)
+            {
+                Jump();
+                jumpsUsed++;
+                hasDoubleJumped = true;
+                jumpBufferCounter = 0f;
+            }
         }
     }
 
 
     void HandleMovement()
     {
-        if (!canMove)
+        /*if (!canMove)
         {
             //rb.linearVelocityX = 0f;
             return;
+        }*/
+
+
+        if (isInHitstun || isDashing || isRolling)
+        {
+            return;
         }
-            
+
+        if (!canMove)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            currentVelocityX = 0f;
+            return;
+        }
+
 
         int moveInputFixed = 0;
 
@@ -216,15 +251,21 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleBetterJump()
     {
+        // Faster fall
         if (rb.linearVelocity.y < 0)
         {
             rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
         }
 
+        // Fast fall input
         if (!isGrounded && downInput < -0.5f)
         {
-            Debug.Log("Falling fast");
-            //float fastFallSpeed = 20f;
+            if (hasDoubleJumped)
+            {
+                Debug.Log("GROUND POUND TRIGGERED");
+                hasDoubleJumped = false; // prevent spam
+            }
+
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Min(rb.linearVelocity.y, -fastFallSpeed));
         }
     }
@@ -237,6 +278,8 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded)
         {
             coyoteTimeCounter = coyoteTime;
+            jumpsUsed = 0;
+            hasDoubleJumped = false;
         }
         else
         {
@@ -252,7 +295,7 @@ public class PlayerMovement : MonoBehaviour
     void TryDashOrRoll(bool isDashInput)
     {
         // Prevent overlap with other states
-        if (!isGrounded || isDashing || isRolling || playerCombat.IsAttacking())
+        if ( isDashing || isRolling || playerCombat.IsAttacking())
             return;
 
         if (isDashInput)
@@ -274,7 +317,7 @@ public class PlayerMovement : MonoBehaviour
     void StartDash()
     {
         isDashing = true;
-        canMove = false;
+        //canMove = false;
 
         float direction = Mathf.Sign(transform.localScale.x);
         rb.linearVelocity = new Vector2(direction * dashSpeed, 0f);
@@ -285,7 +328,7 @@ public class PlayerMovement : MonoBehaviour
     void StartRoll()
     {
         isRolling = true;
-        canMove = false;
+        //canMove = false;
 
         float direction = Mathf.Sign(transform.localScale.x);
         rb.linearVelocity = new Vector2(direction * rollSpeed, 0f);

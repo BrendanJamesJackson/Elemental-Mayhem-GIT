@@ -41,7 +41,7 @@ public class KnockbackReceiver : MonoBehaviour
 
         // Disable movement
         if (movement != null)
-            movement.canMove = false;
+            movement.isInHitstun = true;
 
         direction.y = .5f;
 
@@ -54,7 +54,7 @@ public class KnockbackReceiver : MonoBehaviour
 
         // Re-enable movement
         if (movement != null)
-            movement.canMove = true;
+            movement.isInHitstun = false;
     }
 
     private void Update()
@@ -77,7 +77,7 @@ public class KnockbackReceiver : MonoBehaviour
             attackerRb.linearVelocity = Vector2.zero;
 
         if (movement != null)
-            movement.canMove = false;
+            movement.isInHitstun = true;
         this.GetComponent<Animator>().speed = 0;
         this.GetComponent<Animator>().SetTrigger("Hit");
 
@@ -92,7 +92,7 @@ public class KnockbackReceiver : MonoBehaviour
         isShaking = false;
 
         if (movement != null)
-            movement.canMove = true;
+            movement.isInHitstun = false;
         this.GetComponent<Animator>().speed = 1;
 
         if (attackerMovement != null)
