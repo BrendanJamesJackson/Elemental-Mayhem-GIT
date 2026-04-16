@@ -19,11 +19,14 @@ public class PlayerCombat : MonoBehaviour
     [Header("Attack Indices")]
     public int airAttackIndex = 3;
     public int specialAttackIndex = 4;
+    public int rangedSpecialAttackIndex = 5;
 
 
     [Header("Special Attack")]
     public bool isChargeSpecial = false;
     public bool isChargeElementalSpecial = false;
+    public bool isRangedSpecial = false;
+    public bool isRangedElementalSpecial = false;
 
     private bool isCharging = false;
 
@@ -112,6 +115,45 @@ public class PlayerCombat : MonoBehaviour
                 ReleaseCharge();
             }
         }
+    }
+
+    public void RangedSpecialInput(InputAction.CallbackContext context)
+    {
+        if (isBlocking || !movement.IsGrounded())
+            return;
+
+        if (!isRangedSpecial && !playerManager.GetIsElemental())
+        {
+            Debug.Log("Not ranged special, transferrring ownership to standard special");
+            SpecialInput(context);
+        }
+        else if (!isRangedElementalSpecial && playerManager.GetIsElemental())
+        {
+            SpecialInput(context);
+        }
+        else if (isRangedSpecial && !playerManager.GetIsElemental())
+        {
+            if (context.performed && !isAttacking)
+            {
+                DoRangedSpecial();
+            }
+        }
+        else if (isRangedElementalSpecial && playerManager.GetIsElemental())
+        {
+            if (context.performed && !isAttacking)
+            {
+                DoRangedSpecial();
+            }
+        }
+        
+        
+    }
+
+    void DoRangedSpecial()
+    {
+        isAttacking = true;
+        currentAttackIndex = specialAttackIndex;
+        animator.SetTrigger("RangedSpecial");
     }
 
     void DoSpecial()

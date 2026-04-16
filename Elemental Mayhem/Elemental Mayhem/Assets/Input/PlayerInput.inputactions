@@ -52,6 +52,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "RangedSpecialAttack",
+                    "type": "Button",
+                    "id": "9bba6b65-fd5c-47d1-988e-95a7a8c44e63",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Dash",
                     "type": "Button",
                     "id": "b7c409c2-c677-4c14-9ec5-2801702f1ac7",
@@ -215,7 +224,18 @@
                 {
                     "name": "",
                     "id": "25082d41-8c07-4d64-81e4-5576ca704a72",
-                    "path": "<Gamepad>/rightShoulder",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Block",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4fb1286-5501-48c2-a525-857f15d1b845",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -365,6 +385,17 @@
                     "action": "EvolveElemental",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "d4edcf24-b262-46a8-9004-61ea091b27db",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RangedSpecialAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
