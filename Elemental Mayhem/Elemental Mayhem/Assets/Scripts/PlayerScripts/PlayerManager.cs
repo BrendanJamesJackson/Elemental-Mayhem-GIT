@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -20,12 +21,31 @@ public class PlayerManager : MonoBehaviour
 
     private KnockbackReceiver knockbackReceiver;
 
+    public bool isInElementalForm = false;
+
+    public Animator animator;
+
     private void Awake()
     {
         currentLife = maxLife;
         currentHearts = maxHearts;
 
         knockbackReceiver = GetComponent<KnockbackReceiver>();
+    }
+
+
+    public void EvolveInputHandler(InputAction.CallbackContext context)
+    {
+
+        if (currentMana < maxMana)
+        {
+            return;
+        }
+
+        if (context.performed)
+        {
+            isInElementalForm = true;
+        }
     }
 
     public void TakeHit(float baseDamage,float baseKnockback, Vector2 direction, GameObject attacker = null)
@@ -58,6 +78,15 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        animator.SetBool("isElemental",isInElementalForm);
+    }
+
+    public bool GetIsElemental()
+    {
+        return isInElementalForm;
+    }
 
     public void GainMana(float amount)
     {

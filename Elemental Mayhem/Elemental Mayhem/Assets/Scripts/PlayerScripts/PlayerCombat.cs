@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
     [Header("Setup")]
     public Animator animator;
     public PlayerMovement movement; // to check grounded
+    public PlayerManager playerManager;
 
     [Header("Character Type")]
     public bool isComboCharacter = true;
@@ -22,6 +23,7 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("Special Attack")]
     public bool isChargeSpecial = false;
+    public bool isChargeElementalSpecial = false;
 
     private bool isCharging = false;
 
@@ -90,7 +92,7 @@ public class PlayerCombat : MonoBehaviour
         if (isBlocking || !movement.IsGrounded())
             return;
 
-        if (!isChargeSpecial)
+        if ((!isChargeSpecial && !playerManager.GetIsElemental()) || (!isChargeElementalSpecial && playerManager.GetIsElemental()))
         {
             if (context.performed && !isAttacking)
             {
