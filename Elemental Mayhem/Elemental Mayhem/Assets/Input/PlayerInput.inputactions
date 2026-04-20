@@ -396,6 +396,17 @@
                     "action": "RangedSpecialAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c9ad00f1-231d-44fc-b011-e95beca4525e",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RangedSpecialAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

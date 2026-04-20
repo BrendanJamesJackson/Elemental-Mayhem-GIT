@@ -33,7 +33,10 @@ public class PlayerManager : MonoBehaviour
         knockbackReceiver = GetComponent<KnockbackReceiver>();
     }
 
-
+    public float GetManaRatio()
+    {
+        return currentMana / maxMana;
+    }
     public void EvolveInputHandler(InputAction.CallbackContext context)
     {
 

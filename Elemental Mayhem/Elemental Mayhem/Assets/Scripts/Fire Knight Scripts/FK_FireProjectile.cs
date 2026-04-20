@@ -16,6 +16,8 @@ public class FK_FireProjectile : MonoBehaviour
 
         float direction = this.gameObject.transform.localScale.x;
 
+        temp.transform.localScale = this.gameObject.transform.localScale;
+
         rb.linearVelocityX = direction * shootSpeed;
 
 

@@ -20,7 +20,7 @@ public class Hitbox : MonoBehaviour
             return;
         }
 
-        Debug.Log("Hitbox land");
+        Debug.Log("Hitbox land" + collision.gameObject.name);
 
         PlayerManager pm = collision.GetComponent<PlayerManager>();
 

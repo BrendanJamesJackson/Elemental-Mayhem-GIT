@@ -838,6 +838,7 @@ GameObject:
   - component: {fileID: 1457126396}
   - component: {fileID: 1457126397}
   - component: {fileID: 1457126398}
+  - component: {fileID: 1457126399}
   m_Layer: 6
   m_Name: FireKnightPlayer
   m_TagString: Untagged
@@ -1296,7 +1297,7 @@ MonoBehaviour:
   currentHearts: 0
   minKnockbackMultiplier: 1
   maxKnockbackMultiplier: 2
-  isInElementalForm: 1
+  isInElementalForm: 0
   animator: {fileID: 1457126396}
 --- !u!114 &1457126398
 MonoBehaviour:
@@ -1313,6 +1314,28 @@ MonoBehaviour:
   projectilePrefab: {fileID: 7208397239179755784, guid: 755855cc859c0ea45a3035170d19d034, type: 3}
   shootPoint: {fileID: 1056923253}
   shootSpeed: 25
+--- !u!114 &1457126399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457126387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7bfa6cd508a6244bf8c96ecc52c170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlowPulse
+  glowMaterial: {fileID: 2100000, guid: a4ff7794a0cc3dc44a6fdf8774d68936, type: 2}
+  emissionColor: {r: 0.9450981, g: 0.85098046, b: 0.13333334, a: 0}
+  elementalEmissionColor: {r: 0.9450981, g: 0.85098046, b: 0.13333334, a: 0}
+  emissionStrength: 0
+  manaRatio: 0
+  playerManager: {fileID: 1457126397}
+  pulseMin: 4
+  pulseMax: 12
+  pulseSpeed: 8
+  elementalBrightness: 20
 --- !u!1 &1499325678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,7 +1352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1499325679
 SpriteRenderer:
   serializedVersion: 2
@@ -1380,7 +1403,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: d6c26c0006be67d46bccff2f89397801, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7056604, g: 0.7056604, b: 0.7056604, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1537,7 +1560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1944452122
 SpriteRenderer:
   serializedVersion: 2
@@ -1588,7 +1611,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: d6c26c0006be67d46bccff2f89397801, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7056604, g: 0.7056604, b: 0.7056604, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
