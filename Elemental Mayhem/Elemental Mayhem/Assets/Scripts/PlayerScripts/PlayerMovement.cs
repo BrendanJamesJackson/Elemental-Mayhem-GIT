@@ -178,11 +178,7 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovement()
     {
-        /*if (!canMove)
-        {
-            //rb.linearVelocityX = 0f;
-            return;
-        }*/
+        
 
 
         if (isInHitstun || isDashing || isRolling)

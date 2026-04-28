@@ -9,6 +9,8 @@ public class GlowPulse : MonoBehaviour
     public Color emissionColor;
     public Color elementalEmissionColor;
     public float emissionStrength;
+    public float chargingMaxStrength;
+    public float tolerance;
 
     public float manaRatio;
 
@@ -24,6 +26,12 @@ public class GlowPulse : MonoBehaviour
 
     private float pulseTimer = 0f;
 
+    private void Start()
+    {
+        glowMaterial = GetComponent<SpriteRenderer>().material;
+    }
+
+
     private void Update()
     {
         manaRatio = playerManager.GetManaRatio();
@@ -33,6 +41,7 @@ public class GlowPulse : MonoBehaviour
         if (isElementalForm)
         {
             emissionStrength = elementalBrightness;
+            tolerance = 0.4f;
         }
 
         else if (manaRatio >= 1 )
@@ -40,10 +49,12 @@ public class GlowPulse : MonoBehaviour
             pulseTimer += Time.deltaTime * pulseSpeed;
             float t = (Mathf.Sin(pulseTimer) + 1f) / 2f; 
             emissionStrength = Mathf.Lerp(pulseMin, pulseMax, t);
+            tolerance = 0.4f;
         }
         else
         {
-            emissionStrength = math.remap(0,1,0,10,manaRatio);
+            emissionStrength = math.remap(0,1,0,chargingMaxStrength,manaRatio);
+            tolerance = math.remap(0,1,0.1f,0.4f,manaRatio);
         }
         SetMaterialProperties();
     }
@@ -51,6 +62,7 @@ public class GlowPulse : MonoBehaviour
     public void SetMaterialProperties()
     {
         glowMaterial.SetFloat("_EmissionStrength",emissionStrength);
+        glowMaterial.SetFloat("_Tolerance", tolerance);
     }
 
 

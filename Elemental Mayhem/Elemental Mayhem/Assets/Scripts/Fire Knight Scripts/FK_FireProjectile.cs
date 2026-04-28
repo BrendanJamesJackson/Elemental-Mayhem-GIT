@@ -11,6 +11,13 @@ public class FK_FireProjectile : MonoBehaviour
     public void FireProjectile()
     {
         GameObject temp = Instantiate(projectilePrefab,shootPoint.position,shootPoint.rotation);
+        
+        Hitbox hb = temp.GetComponent<Hitbox>();
+
+        if (hb != null)
+        {
+            hb.Initialize(this.gameObject);
+        }
 
         Rigidbody2D rb = temp.GetComponent<Rigidbody2D>();
 

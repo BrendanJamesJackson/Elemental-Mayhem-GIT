@@ -27,6 +27,8 @@ public class KnockbackReceiver : MonoBehaviour
     {
         PlayerMovement attackerMovement = attacker.GetComponent<PlayerMovement>();
 
+
+        //Set correct facing direction
         if (direction.x < 0)
         {
             this.transform.localScale = new Vector3(1, 1, 1);
@@ -48,6 +50,8 @@ public class KnockbackReceiver : MonoBehaviour
         // Apply knockback
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(direction * force, ForceMode2D.Impulse);
+
+        Debug.Log("Hit Force: " + (direction * force));
 
         // Wait for hitstun
         yield return new WaitForSeconds(hitstunDuration);

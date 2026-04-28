@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_GlowFK
+  m_Name: M_GlowLV
   m_Shader: {fileID: -6465566751694194690, guid: 1e8ed29d7d7535b4a99d572f589fc1c0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -23,19 +23,7 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MaskTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -53,19 +41,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _EmissionStrength: 6.5
-    - _EnableExternalAlpha: 0
-    - _Tolerance: 0.23
-    - _ZWrite: 0
+    - _EmissionStrength: 30.18
+    - _Tolerance: 0.1
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1, g: 0.8467103, b: 0, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TargetColor: {r: 0.9450981, g: 0.85098046, b: 0.13333334, a: 1}
+    - _EmissionColor: {r: 0.454902, g: 0.9450981, b: 0.7490196, a: 1}
+    - _TargetColor: {r: 0.454902, g: 0.9450981, b: 0.7490196, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &8263074961792704842
+--- !u!114 &910290895002264830
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
