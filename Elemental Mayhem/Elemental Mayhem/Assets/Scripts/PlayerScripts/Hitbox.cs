@@ -10,6 +10,7 @@ public class Hitbox : MonoBehaviour
     public PlayerCombat playerCombat;
 
     public bool isProjectile = false;
+    public int projectileAttackIndex;
 
     [Header("Projectile Only")]
     public GameObject impactEffect;
@@ -50,19 +51,41 @@ public class Hitbox : MonoBehaviour
 
         if (pm != null)
         {
-        /*#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPaused = true;
-        #endif
-        */
-            Vector2 direction = (collision.transform.position - owner.transform.position).normalized;
 
+            Vector2 direction;
 
-            pm.TakeHit(
-                playerCombat.GetDamage(),
-                playerCombat.GetKnockback(),
+            /*if (isProjectile)
+            {
+                direction = (collision.transform.position - transform.position).normalized;
+            }
+            else
+            {
+                direction = (collision.transform.position - owner.transform.position).normalized;
+            }*/
+
+            direction = (collision.transform.position - owner.transform.position).normalized;
+
+            if (isProjectile)
+            {
+                pm.TakeHit(
+                playerCombat.GetDamageProjectile(projectileAttackIndex),
+                playerCombat.GetKnockbackProjectile(projectileAttackIndex),
                 direction,
                 owner
-            );
+                );
+            }
+            else
+            {
+                pm.TakeHit(
+                    playerCombat.GetDamage(),
+                    playerCombat.GetKnockback(),
+                    direction,
+                    owner
+                );
+            }
+
+
+                
             Debug.Log("Take Hit: Direction: " + direction);
             if (isProjectile)
             {

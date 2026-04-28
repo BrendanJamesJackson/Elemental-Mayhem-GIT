@@ -5,7 +5,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public List<FighterState> fighters = new List<FighterState>();
+    [Header("Fighters in Match")]
+    public List<PlayerManager> fighters = new List<PlayerManager>();
+
+    [Header("Respawn Delay")]
+    public float koPauseTime = 0.5f;
+
+    public Transform[] spawnPoints; 
 
 
     private void Awake()
@@ -13,19 +19,25 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public void KnockOut(FighterState fighter)
+    public void KnockOut(PlayerManager player)
     {
-        fighter.stocks--;
-
-        Debug.Log(fighter.name + " was KO'd!");
-
-        if (fighter.stocks <= 0)
+        if (player == null || player.isEliminated)
         {
-            Eliminate(fighter);
+            return;
         }
-        else
+
+        player.LoseHeart();
+
+        Debug.Log(player.name + " was KO'd!");
+
+        if (player.lastAttacker != null)
         {
-            Respawn(fighter);
+            PlayerManager attacker = player.lastAttacker.GetComponent<PlayerManager>();
+
+            if (attacker != null)
+            {
+                Debug.Log(attacker.name + " got the KO!");
+            }
         }
 
         CheckWinner();
@@ -33,36 +45,45 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void Respawn(FighterState fighter)
-    {
 
-    }
-
-    void Eliminate(FighterState fighter)
-    {
-        fighter.gameObject.SetActive(false);
-    }
 
 
     void CheckWinner()
     {
-        int alive = 0;
-        FighterState winner = null;
+        PlayerManager lastAlive = null;
 
-        foreach (var fighter in fighters)
+        int aliveCount = 0;
+
+        foreach(var fighter in fighters)
         {
-            if (fighter.stocks > 0)
+            if (fighter != null && !fighter.isEliminated)
             {
-                alive++;
-                winner = fighter;
+                aliveCount++;
+                lastAlive = fighter;
             }
         }
 
-        if (alive == 1)
+        if (aliveCount == 1 && lastAlive != null)
         {
-            Debug.Log(winner.name + " Wins!");
+            Debug.Log("Winner: " + lastAlive.name);
+            EndMatch(lastAlive);
         }
+
     }
 
+    private void EndMatch(PlayerManager winner)
+    {
+        Debug.Log(winner.name + " wins the match!");
+
+        Time.timeScale = 0f;
+    }
+
+    public void RegisterFighter(PlayerManager player)
+    {
+        if (!fighters.Contains(player))
+        {
+            fighters.Add(player);
+        }
+    }
 
 }

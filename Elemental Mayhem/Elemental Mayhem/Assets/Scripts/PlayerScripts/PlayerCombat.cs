@@ -41,6 +41,12 @@ public class PlayerCombat : MonoBehaviour
     private bool canCombo = false;
     private bool queueNextAttack = false;
 
+
+    private Coroutine blockRoutine;
+    public float blockDelay = 0.1f;
+    private bool blockActive = false;
+
+
     public bool IsAttacking()
     {
         return isAttacking;
@@ -81,12 +87,36 @@ public class PlayerCombat : MonoBehaviour
 
         if (context.started)
         {
-            StartBlock();
+            //StartBlock();
+            playerManager.evolveTriggered = false;
+            if (blockRoutine != null)
+            {
+                StopCoroutine(blockRoutine);
+            }
+
+            blockRoutine = StartCoroutine(BlockDelayRoutine());
         }
         else if (context.canceled)
         {
-            Debug.Log("Release Block Function Called");
-            EndBlock();
+            if (blockRoutine != null)
+                StopCoroutine(blockRoutine);
+
+            if (blockActive)
+            {
+                EndBlock();
+                blockActive = false;
+            }
+        }
+    }
+
+    private IEnumerator BlockDelayRoutine()
+    {
+        yield return new WaitForSeconds(blockDelay);
+
+        if (!playerManager.evolveTriggered)
+        {
+            StartBlock();
+            blockActive = true;
         }
     }
 
@@ -303,9 +333,19 @@ public class PlayerCombat : MonoBehaviour
         return damage[currentAttackIndex];
     }
 
+    public float GetDamageProjectile(int index)
+    {
+        return damage[index];
+    }
+
     public float GetKnockback()
     {
         return knockback[currentAttackIndex];
+    }
+
+    public float GetKnockbackProjectile(int index)
+    {
+        return knockback[index];
     }
 
     public int GetCurrentAttackIndex()

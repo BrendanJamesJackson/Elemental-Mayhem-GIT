@@ -45,13 +45,14 @@ public class KnockbackReceiver : MonoBehaviour
         if (movement != null)
             movement.isInHitstun = true;
 
-        direction.y = .5f;
+        direction.y = Mathf.Max(direction.y, 0.5f);
+        //direction = direction.normalized;
 
         // Apply knockback
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(direction * force, ForceMode2D.Impulse);
 
-        Debug.Log("Hit Force: " + (direction * force));
+        Debug.Log("Hit Direction after Y 0.5:  " + direction + "Hit Force:  " + (force) + " Combined: " + (direction*force));
 
         // Wait for hitstun
         yield return new WaitForSeconds(hitstunDuration);

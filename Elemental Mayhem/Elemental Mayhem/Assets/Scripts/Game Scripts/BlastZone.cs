@@ -4,12 +4,21 @@ public class BlastZone : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FighterState fighter = collision.GetComponent<FighterState>();
+       PlayerManager player = collision.gameObject.GetComponent<PlayerManager>();
 
-        if (fighter != null )
+        if (player == null)
         {
-            GameManager.instance.KnockOut(fighter );
+            return;
         }
+
+        if (player.isEliminated)
+        {
+            return;
+        }
+
+       
+        GameManager.instance.KnockOut(player);
+        
 
     }
 }

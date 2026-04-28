@@ -156,11 +156,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d0737f79410344e8884262ae00ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  damage: 10
-  knockbackForce: 10
+  damage: 3000
+  knockbackForce: 3000
   owner: {fileID: 0}
   playerCombat: {fileID: 0}
   isProjectile: 1
+  projectileAttackIndex: 4
   impactEffect: {fileID: 1125671675503929278, guid: 8a2343ebf3257d84ab6aadefb33e5f6f, type: 3}
   destroyDelay: 0.03
   stickTime: 0.02

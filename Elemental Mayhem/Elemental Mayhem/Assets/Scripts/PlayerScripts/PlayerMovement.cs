@@ -58,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float currentVelocityX;
 
+    public PlayerManager playerManager;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -291,7 +293,7 @@ public class PlayerMovement : MonoBehaviour
     void TryDashOrRoll(bool isDashInput)
     {
         // Prevent overlap with other states
-        if ( isDashing || isRolling || playerCombat.IsAttacking())
+        if ( isDashing || isRolling || playerCombat.IsAttacking() || playerManager.GetIsElemental())
             return;
 
         if (isDashInput)
