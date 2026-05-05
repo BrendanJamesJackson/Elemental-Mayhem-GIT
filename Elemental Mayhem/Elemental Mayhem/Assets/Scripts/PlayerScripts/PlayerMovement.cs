@@ -36,6 +36,11 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
+    private Collider2D currentPlatform;
+    [SerializeField] private float dropDuration = 0.25f;
+    private bool isDropping = false;
+    [SerializeField] private Collider2D floorCollider;
+
     [Header("Dash / Roll")]
     public bool hasDash = false;
     public bool hasRoll = false;
@@ -52,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float moveInput;
     [SerializeField]private float downInput;
-    private bool isGrounded;
+    [SerializeField] private bool isGrounded;
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
 
@@ -156,6 +161,15 @@ public class PlayerMovement : MonoBehaviour
         if (!canMove || isInHitstun)
             return;
 
+
+        if (jumpBufferCounter > 0f && isGrounded && downInput < -0.5f && currentPlatform != null && !isDropping)
+        {
+            StartCoroutine(DropThroughPlatform());
+            jumpBufferCounter = 0f;
+            return;
+        }
+
+
         if (jumpBufferCounter > 0f)
         {
             // FIRST JUMP (ground or coyote)
@@ -178,6 +192,25 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    private IEnumerator DropThroughPlatform()
+    {
+        isDropping = true;
+        animator.SetBool("isDropping", isDropping);
+        
+        Collider2D tempCol = currentPlatform;
+        Physics2D.IgnoreCollision(floorCollider, currentPlatform, true);
+        //isGrounded = false;
+        // small push downward so you actually fall
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -2f);
+
+        yield return new WaitForSeconds(dropDuration);
+
+        Physics2D.IgnoreCollision(floorCollider, tempCol, false);
+
+        isDropping = false;
+        animator.SetBool("isDropping", isDropping);
+    }
+
     void HandleMovement()
     {
         
@@ -198,11 +231,11 @@ public class PlayerMovement : MonoBehaviour
 
         int moveInputFixed = 0;
 
-        if (moveInput > 0)
+        if (moveInput > 0.5f)
         {
             moveInputFixed = 1;
         }
-        else if (moveInput < 0)
+        else if (moveInput < -0.5f)
         {
             moveInputFixed = -1;
         }
@@ -270,6 +303,7 @@ public class PlayerMovement : MonoBehaviour
 
     void CheckGround()
     {
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         
 
@@ -347,4 +381,18 @@ public class PlayerMovement : MonoBehaviour
     {
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+
+    public void SetCurrentPlatform(Collider2D platform)
+    {
+        currentPlatform = platform;
+    }
+
+    public void ClearCurrentPlatform(Collider2D platform)
+    {
+        if (currentPlatform == platform)
+        {
+            currentPlatform = null;
+        }
+    }
+
 }
