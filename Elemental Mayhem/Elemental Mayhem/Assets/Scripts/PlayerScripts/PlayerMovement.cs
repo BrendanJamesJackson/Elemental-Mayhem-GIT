@@ -78,7 +78,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        CheckGround();
+        if (!(rb.linearVelocityY > 0))
+        {
+            CheckGround();
+        }
+        else
+        {
+            isGrounded = false;
+        }
+
 
         if (jumpBufferCounter > 0)
         {
