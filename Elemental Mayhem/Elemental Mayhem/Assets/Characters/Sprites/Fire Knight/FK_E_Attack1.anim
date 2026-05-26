@@ -1269,6 +1269,20 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.083333336
+    functionName: PlayAudioClip
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 9
+    messageOptions: 0
+  - time: 0.41666666
+    functionName: PlayAudioClip
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 9
+    messageOptions: 0
   - time: 0.5833333
     functionName: DisableCombo
     data: 
