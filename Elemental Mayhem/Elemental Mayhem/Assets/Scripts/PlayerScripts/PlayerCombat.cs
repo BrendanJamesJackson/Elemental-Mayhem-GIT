@@ -32,6 +32,7 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("Blocking")]
     public bool isBlocking = false;
+    public bool hasElementalBlocking = false;
 
     // Internal State
     [SerializeField]private int currentAttackIndex = 0;
@@ -80,7 +81,7 @@ public class PlayerCombat : MonoBehaviour
 
     public void BlockInput(InputAction.CallbackContext context)
     {
-        if (!movement.IsGrounded())
+        if (!movement.IsGrounded() || (!hasElementalBlocking && playerManager.GetIsElemental()))
         {
             return;
         }

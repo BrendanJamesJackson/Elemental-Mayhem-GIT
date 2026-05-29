@@ -3168,7 +3168,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.8900003, y: 0.90999997, z: -10}
+  m_LocalPosition: {x: 6.1823764, y: 0.82938623, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7096,7 +7096,7 @@ MonoBehaviour:
   - Object: {fileID: 2001844131}
     Weight: 1
     Radius: 5
-  - Object: {fileID: 0}
+  - Object: {fileID: 1759055778}
     Weight: 1
     Radius: 5
   m_LegacyTargets: []
@@ -7109,7 +7109,7 @@ Transform:
   m_GameObject: {fileID: 1415256479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.8900003, y: 0.90999997, z: 0}
+  m_LocalPosition: {x: 7.196519, y: 0.877262, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8339,6 +8339,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1706754257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5192178135841551423, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_Name
+      value: GroundMonkPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.384752
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.6387722
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
 --- !u!1 &1739863124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8430,6 +8487,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &1759055778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1532180845709914986, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+  m_PrefabInstance: {fileID: 1706754257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1768665676
 GameObject:
   m_ObjectHideFlags: 0
@@ -15575,6 +15637,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4688388628858845535, guid: 7f9d99cda0002d74c8d11db0bf175674, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 7f9d99cda0002d74c8d11db0bf175674, type: 3}
       propertyPath: m_Name
       value: FireKnightPlayer
@@ -15638,6 +15704,7 @@ SceneRoots:
   - {fileID: 2005099914}
   - {fileID: 759587829}
   - {fileID: 1067764564973254165}
+  - {fileID: 1706754257}
   - {fileID: 1608681760}
   - {fileID: 1415256481}
   - {fileID: 1669284604}
