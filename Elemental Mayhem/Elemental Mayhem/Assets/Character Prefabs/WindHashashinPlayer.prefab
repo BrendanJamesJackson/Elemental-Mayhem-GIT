@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2639325582699563992}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.582, z: 0}
+  m_LocalPosition: {x: 0, y: -3.953, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 6173584217980542178}
   - component: {fileID: 1203093390945634750}
   m_Layer: 6
-  m_Name: GroundMonkPlayer
+  m_Name: WindHashashinPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4ea629fc04b947b4ea6d69cfb6524ce8, type: 2}
+  - {fileID: 2100000, guid: 833de5383b8ad9e4eb298bb358501cac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -192,7 +192,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 3144bf8fad756834fb7abd0427a2fea3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: befe4d8916dfc6c438204acebed895d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -263,8 +263,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.013841152, y: -2.4963186}
-  m_Size: {x: 0.68401814, y: 2.1631484}
+  m_Offset: {x: 0.12107301, y: -2.5745692}
+  m_Size: {x: 1.3390043, y: 2.748578}
   m_Direction: 0
 --- !u!114 &5592974076902999249
 MonoBehaviour:
@@ -529,10 +529,10 @@ MonoBehaviour:
   airAttackIndex: 0
   specialAttackIndex: 4
   rangedSpecialAttackIndex: 5
-  isChargeSpecial: 0
+  isChargeSpecial: 1
   isChargeElementalSpecial: 0
   isRangedSpecial: 0
-  isRangedElementalSpecial: 0
+  isRangedElementalSpecial: 1
   isBlocking: 0
   hasElementalBlocking: 0
   currentAttackIndex: 0
@@ -548,7 +548,7 @@ Animator:
   m_GameObject: {fileID: 5192178135841551423}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4dbd05f4927835f44b9cab5d5b5b5ace, type: 2}
+  m_Controller: {fileID: 9100000, guid: bb7d7ca2e33fbbd4697890607bdbfde1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -622,10 +622,10 @@ MonoBehaviour:
   tolerance: 0
   manaRatio: 0
   playerManager: {fileID: 5483060495746888710}
-  pulseMin: 4
-  pulseMax: 12
+  pulseMin: 10
+  pulseMax: 20
   pulseSpeed: 8
-  elementalBrightness: 20
+  elementalBrightness: 30
 --- !u!114 &621749263636301703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,7 +806,7 @@ Transform:
   m_GameObject: {fileID: 7046150475455885464}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.072, z: 0}
+  m_LocalPosition: {x: 0, y: -3.443, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
