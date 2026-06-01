@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dash / Roll")]
     public bool hasDash = false;
     public bool hasRoll = false;
+    public bool hasElementalMovementAbility = false;
 
     public float dashSpeed = 15f;
     public float rollSpeed = 12f;
@@ -335,10 +336,15 @@ public class PlayerMovement : MonoBehaviour
     void TryDashOrRoll(bool isDashInput)
     {
         // Prevent overlap with other states
-        if ( isDashing || isRolling || playerCombat.IsAttacking() || playerManager.GetIsElemental())
+        if ( isDashing || isRolling || playerCombat.IsAttacking() || (playerManager.GetIsElemental() && !hasElementalMovementAbility))
             return;
 
-        if (isDashInput)
+        if (playerManager.GetIsElemental() && hasElementalMovementAbility)
+        {
+            isDashing = true;
+            animator.SetTrigger("Dash");
+        }
+        else if (isDashInput)
         {
             if (hasDash)
                 StartDash();

@@ -300,6 +300,7 @@ MonoBehaviour:
   floorCollider: {fileID: 4643396282739325815}
   hasDash: 0
   hasRoll: 1
+  hasElementalMovementAbility: 1
   dashSpeed: 15
   rollSpeed: 15
   animator: {fileID: 204041885289025364}
@@ -529,7 +530,7 @@ MonoBehaviour:
   airAttackIndex: 0
   specialAttackIndex: 4
   rangedSpecialAttackIndex: 5
-  isChargeSpecial: 1
+  isChargeSpecial: 0
   isChargeElementalSpecial: 0
   isRangedSpecial: 0
   isRangedElementalSpecial: 1
@@ -625,7 +626,7 @@ MonoBehaviour:
   pulseMin: 10
   pulseMax: 20
   pulseSpeed: 8
-  elementalBrightness: 30
+  elementalBrightness: 15
 --- !u!114 &621749263636301703
 MonoBehaviour:
   m_ObjectHideFlags: 0
