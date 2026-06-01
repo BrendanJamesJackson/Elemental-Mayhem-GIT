@@ -300,6 +300,7 @@ MonoBehaviour:
   floorCollider: {fileID: 4643396282739325815}
   hasDash: 0
   hasRoll: 1
+  hasElementalMovementAbility: 0
   dashSpeed: 15
   rollSpeed: 15
   animator: {fileID: 204041885289025364}
@@ -534,6 +535,7 @@ MonoBehaviour:
   isRangedSpecial: 0
   isRangedElementalSpecial: 1
   isBlocking: 0
+  hasElementalBlocking: 1
   currentAttackIndex: 0
   isAttacking: 0
   blockDelay: 0.05

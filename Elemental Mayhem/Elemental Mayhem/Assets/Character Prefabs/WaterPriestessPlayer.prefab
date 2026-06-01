@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 6173584217980542178}
   - component: {fileID: 1203093390945634750}
   m_Layer: 6
-  m_Name: WindHashashinPlayer
+  m_Name: WaterPriestessPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 833de5383b8ad9e4eb298bb358501cac, type: 2}
+  - {fileID: 2100000, guid: c7b34d7927ad0164087ee9983cf903b8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -192,7 +192,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: befe4d8916dfc6c438204acebed895d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e168b8fad4e633f4a89f53c03d49d73b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -263,8 +263,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.12107301, y: -2.5745692}
-  m_Size: {x: 1.3390043, y: 2.748578}
+  m_Offset: {x: 0.069833994, y: -2.7868452}
+  m_Size: {x: 1.0022902, y: 2.324026}
   m_Direction: 0
 --- !u!114 &5592974076902999249
 MonoBehaviour:
@@ -298,9 +298,9 @@ MonoBehaviour:
     m_Bits: 8
   dropDuration: 0.25
   floorCollider: {fileID: 4643396282739325815}
-  hasDash: 0
+  hasDash: 1
   hasRoll: 1
-  hasElementalMovementAbility: 1
+  hasElementalMovementAbility: 0
   dashSpeed: 15
   rollSpeed: 15
   animator: {fileID: 204041885289025364}
@@ -549,7 +549,7 @@ Animator:
   m_GameObject: {fileID: 5192178135841551423}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bb7d7ca2e33fbbd4697890607bdbfde1, type: 2}
+  m_Controller: {fileID: 9100000, guid: dd19a371d88527d4598d07fdeeb73797, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5192178135841551423}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a73c122f167fbe4799b6321b653f10b, type: 3}
   m_Name: 
@@ -623,10 +623,10 @@ MonoBehaviour:
   tolerance: 0
   manaRatio: 0
   playerManager: {fileID: 5483060495746888710}
-  pulseMin: 10
-  pulseMax: 20
+  pulseMin: 4
+  pulseMax: 12
   pulseSpeed: 8
-  elementalBrightness: 15
+  elementalBrightness: 7.6
 --- !u!114 &621749263636301703
 MonoBehaviour:
   m_ObjectHideFlags: 0
