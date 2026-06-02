@@ -367,7 +367,6 @@ public class PlayerMovement : MonoBehaviour
 
         float direction = Mathf.Sign(transform.localScale.x);
         rb.linearVelocity = new Vector2(direction * dashSpeed, 0f);
-
         animator.SetTrigger("Dash");
     }
 

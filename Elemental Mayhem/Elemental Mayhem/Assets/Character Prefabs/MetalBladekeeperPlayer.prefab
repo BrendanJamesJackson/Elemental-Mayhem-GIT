@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 4467899277021719142}
   - component: {fileID: 204041885289025364}
   - component: {fileID: 5483060495746888710}
-  - component: {fileID: 5706459462246875832}
+  - component: {fileID: 8375514211533012521}
   - component: {fileID: 7345874784590285518}
   - component: {fileID: 621749263636301703}
   - component: {fileID: 6173584217980542178}
@@ -298,10 +298,10 @@ MonoBehaviour:
     m_Bits: 8
   dropDuration: 0.25
   floorCollider: {fileID: 4643396282739325815}
-  hasDash: 0
+  hasDash: 1
   hasRoll: 1
   hasElementalMovementAbility: 0
-  dashSpeed: 15
+  dashSpeed: -15
   rollSpeed: 15
   animator: {fileID: 204041885289025364}
   playerCombat: {fileID: 4467899277021719142}
@@ -530,10 +530,10 @@ MonoBehaviour:
   airAttackIndex: 0
   specialAttackIndex: 4
   rangedSpecialAttackIndex: 5
-  isChargeSpecial: 1
+  isChargeSpecial: 0
   isChargeElementalSpecial: 0
-  isRangedSpecial: 0
-  isRangedElementalSpecial: 1
+  isRangedSpecial: 1
+  isRangedElementalSpecial: 0
   isBlocking: 0
   hasElementalBlocking: 1
   currentAttackIndex: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   animator: {fileID: 204041885289025364}
   lastAttacker: {fileID: 0}
   evolveTriggered: 0
---- !u!114 &5706459462246875832
+--- !u!114 &8375514211533012521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,10 +597,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5192178135841551423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a73c122f167fbe4799b6321b653f10b, type: 3}
+  m_Script: {fileID: 11500000, guid: c1eb107b67cb0ee439c5489744c74057, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FK_FireProjectile
-  projectilePrefab: {fileID: 7208397239179755784, guid: 755855cc859c0ea45a3035170d19d034, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::Generic_FireProjectile
+  projectilePrefab: {fileID: 7208397239179755784, guid: ae1da62808fac234a93fb367d9f5e20d, type: 3}
   shootPoint: {fileID: 3650328042658887334}
   shootSpeed: 25
 --- !u!114 &7345874784590285518
