@@ -297,7 +297,7 @@ public class PlayerCombat : MonoBehaviour
         TriggerAttack(currentAttackIndex);
 
         currentAttackIndex++;
-        if (currentAttackIndex >= damage.Length)
+        if (currentAttackIndex >= 3)
             currentAttackIndex = 0;
     }
 

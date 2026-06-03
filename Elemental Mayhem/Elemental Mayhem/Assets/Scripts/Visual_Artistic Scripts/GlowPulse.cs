@@ -11,6 +11,7 @@ public class GlowPulse : MonoBehaviour
     public float emissionStrength;
     public float chargingMaxStrength;
     public float tolerance;
+    public float maxTolerance = 0.4f;
 
     public float manaRatio;
 
@@ -41,7 +42,7 @@ public class GlowPulse : MonoBehaviour
         if (isElementalForm)
         {
             emissionStrength = elementalBrightness;
-            tolerance = 0.4f;
+            tolerance = maxTolerance;
         }
 
         else if (manaRatio >= 1 )
@@ -49,12 +50,12 @@ public class GlowPulse : MonoBehaviour
             pulseTimer += Time.deltaTime * pulseSpeed;
             float t = (Mathf.Sin(pulseTimer) + 1f) / 2f; 
             emissionStrength = Mathf.Lerp(pulseMin, pulseMax, t);
-            tolerance = 0.4f;
+            tolerance = maxTolerance;
         }
         else
         {
             emissionStrength = math.remap(0,1,0,chargingMaxStrength,manaRatio);
-            tolerance = math.remap(0,1,0.1f,0.4f,manaRatio);
+            tolerance = math.remap(0,1,0.1f,maxTolerance,manaRatio);
         }
         SetMaterialProperties();
     }
