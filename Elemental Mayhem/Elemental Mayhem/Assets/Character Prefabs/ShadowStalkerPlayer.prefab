@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 6173584217980542178}
   - component: {fileID: 1203093390945634750}
   m_Layer: 6
-  m_Name: CrystalMaulerPlayer
+  m_Name: ShadowStalkerPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6c3d05db4b9d87c478106ec81630efd2, type: 2}
+  - {fileID: 2100000, guid: 41563b4045a530d4eb03be7061cdce78, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -192,7 +192,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 660eb027986858e4484eec38830f15d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cdcb86ed3aa2b8e4ea63fa17d7380dfd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -263,8 +263,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00751853, y: -2.7602167}
-  m_Size: {x: 0.86524534, y: 2.377283}
+  m_Offset: {x: -0.1071434, y: -2.7114992}
+  m_Size: {x: 0.846056, y: 2.474718}
   m_Direction: 0
 --- !u!114 &5592974076902999249
 MonoBehaviour:
@@ -514,7 +514,7 @@ MonoBehaviour:
   animator: {fileID: 204041885289025364}
   movement: {fileID: 5592974076902999249}
   playerManager: {fileID: 5483060495746888710}
-  isComboCharacter: 0
+  isComboCharacter: 1
   damage:
   - 1
   - 2
@@ -530,7 +530,7 @@ MonoBehaviour:
   airAttackIndex: 0
   specialAttackIndex: 4
   rangedSpecialAttackIndex: 5
-  isChargeSpecial: 1
+  isChargeSpecial: 0
   isChargeElementalSpecial: 0
   isRangedSpecial: 0
   isRangedElementalSpecial: 0
@@ -549,7 +549,7 @@ Animator:
   m_GameObject: {fileID: 5192178135841551423}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dad5bd359b3da304bb64fe81f6eed4e2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 17b723f9d908abc4a97838d7a359e052, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -621,13 +621,13 @@ MonoBehaviour:
   emissionStrength: 0
   chargingMaxStrength: 15
   tolerance: 0
-  maxTolerance: 0.1
+  maxTolerance: 0.4
   manaRatio: 0
   playerManager: {fileID: 5483060495746888710}
   pulseMin: 4
   pulseMax: 12
   pulseSpeed: 8
-  elementalBrightness: 12
+  elementalBrightness: 20
 --- !u!114 &621749263636301703
 MonoBehaviour:
   m_ObjectHideFlags: 0
