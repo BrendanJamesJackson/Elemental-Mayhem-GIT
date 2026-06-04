@@ -296,9 +296,7 @@ public class PlayerCombat : MonoBehaviour
 
         TriggerAttack(currentAttackIndex);
 
-        currentAttackIndex++;
-        if (currentAttackIndex >= 3)
-            currentAttackIndex = 0;
+        
     }
 
     //Air attacking
@@ -328,6 +326,15 @@ public class PlayerCombat : MonoBehaviour
         queueNextAttack = false;
         currentAttackIndex = 0;
     }
+
+    public void EndAttackNonCombo()
+    {
+        isAttacking = false;
+        currentAttackIndex++;
+        if (currentAttackIndex >= 3)
+            currentAttackIndex = 0;
+    }
+
 
     public float GetDamage()
     {
