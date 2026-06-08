@@ -55,14 +55,14 @@ Material:
     m_Floats:
     - _EmissionStrength: 7.6
     - _EnableExternalAlpha: 0
-    - _Tolerance: 0.23
-    - _UseSecondaryColor: 0
+    - _Tolerance: 0.1
+    - _UseSecondaryColor: 1
     - _ZWrite: 0
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 0.4292453, b: 0.9458144, a: 1}
-    - _OptionalColorSecondary: {r: 0, g: 0, b: 0, a: 1}
+    - _OptionalColorSecondary: {r: 0.48627454, g: 0.1137255, b: 0.54901963, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _TargetColor: {r: 0.76470596, g: 0.14509805, b: 0.7058824, a: 1}
   m_BuildTextureStacks: []

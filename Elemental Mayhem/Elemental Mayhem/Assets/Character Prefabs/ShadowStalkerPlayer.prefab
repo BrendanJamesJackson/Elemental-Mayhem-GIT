@@ -298,10 +298,10 @@ MonoBehaviour:
     m_Bits: 8
   dropDuration: 0.25
   floorCollider: {fileID: 4643396282739325815}
-  hasDash: 0
+  hasDash: 1
   hasRoll: 1
   hasElementalMovementAbility: 0
-  dashSpeed: 15
+  dashSpeed: 18
   rollSpeed: 15
   animator: {fileID: 204041885289025364}
   playerCombat: {fileID: 4467899277021719142}
@@ -625,7 +625,7 @@ MonoBehaviour:
   manaRatio: 0
   playerManager: {fileID: 5483060495746888710}
   pulseMin: 4
-  pulseMax: 12
+  pulseMax: 20
   pulseSpeed: 8
   elementalBrightness: 20
 --- !u!114 &621749263636301703

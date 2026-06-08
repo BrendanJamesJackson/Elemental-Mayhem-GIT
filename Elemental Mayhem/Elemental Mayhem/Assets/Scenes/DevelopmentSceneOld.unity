@@ -180,6 +180,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+--- !u!1001 &427102794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5192178135841551423, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_Name
+      value: LightValkyriePlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802633462296090168, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,9 +949,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4688388628858845535, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
       propertyPath: m_Name
       value: ShadowStalkerPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192178135841551423, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5802633462296090168, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
       propertyPath: m_LocalPosition.x
@@ -935,6 +1000,10 @@ PrefabInstance:
     - target: {fileID: 5802633462296090168, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345874784590285518, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
+      propertyPath: maxTolerance
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1080,3 +1149,4 @@ SceneRoots:
   - {fileID: 1469134670}
   - {fileID: 664413887}
   - {fileID: 1290876781}
+  - {fileID: 427102794}

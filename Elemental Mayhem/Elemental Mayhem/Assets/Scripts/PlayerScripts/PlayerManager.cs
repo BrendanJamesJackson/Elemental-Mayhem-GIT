@@ -48,8 +48,27 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        GameManager.instance.RegisterFighter(this);
+
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.RegisterFighter(this);
+        }
+
+        StartCoroutine(IncMana(1.5f));
     }
+
+
+    private IEnumerator IncMana(float interval)
+    {
+        while (true)
+        {
+
+            currentMana += 5;
+
+            yield return new WaitForSeconds(interval);
+        }
+    }
+
 
     public float GetManaRatio()
     {
