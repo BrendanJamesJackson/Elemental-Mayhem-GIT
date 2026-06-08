@@ -111,12 +111,13 @@ GameObject:
   - component: {fileID: 4467899277021719142}
   - component: {fileID: 204041885289025364}
   - component: {fileID: 5483060495746888710}
+  - component: {fileID: 5706459462246875832}
   - component: {fileID: 7345874784590285518}
   - component: {fileID: 621749263636301703}
   - component: {fileID: 6173584217980542178}
   - component: {fileID: 1203093390945634750}
   m_Layer: 6
-  m_Name: LightningRoninPlayer
+  m_Name: LeafRangerPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +169,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7b3b1ba08f8e11449bb448e6aeb3c622, type: 2}
+  - {fileID: 2100000, guid: e1911956f7440374a9851fe40ee5962e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -191,7 +192,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 7679261c3ff6cc749afeb870b7d55206, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f348836cc7ccb64a9f3cd2323626ca2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -262,8 +263,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03592187, y: -2.6228752}
-  m_Size: {x: 1.0250145, y: 2.651966}
+  m_Offset: {x: 0.005789757, y: -2.5745692}
+  m_Size: {x: 0.8406849, y: 2.748578}
   m_Direction: 0
 --- !u!114 &5592974076902999249
 MonoBehaviour:
@@ -297,7 +298,7 @@ MonoBehaviour:
     m_Bits: 8
   dropDuration: 0.25
   floorCollider: {fileID: 4643396282739325815}
-  hasDash: 1
+  hasDash: 0
   hasRoll: 1
   hasElementalMovementAbility: 0
   dashSpeed: 15
@@ -529,10 +530,10 @@ MonoBehaviour:
   airAttackIndex: 0
   specialAttackIndex: 4
   rangedSpecialAttackIndex: 5
-  isChargeSpecial: 0
+  isChargeSpecial: 1
   isChargeElementalSpecial: 0
   isRangedSpecial: 0
-  isRangedElementalSpecial: 0
+  isRangedElementalSpecial: 1
   isBlocking: 0
   hasElementalBlocking: 1
   currentAttackIndex: 0
@@ -548,7 +549,7 @@ Animator:
   m_GameObject: {fileID: 5192178135841551423}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: beb2db0500a8651469c1e64558d6306f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6ee2751fd5b1f5248ae1ff19ab535440, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -587,6 +588,21 @@ MonoBehaviour:
   animator: {fileID: 204041885289025364}
   lastAttacker: {fileID: 0}
   evolveTriggered: 0
+--- !u!114 &5706459462246875832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5192178135841551423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a73c122f167fbe4799b6321b653f10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FK_FireProjectile
+  projectilePrefab: {fileID: 7208397239179755784, guid: 755855cc859c0ea45a3035170d19d034, type: 3}
+  shootPoint: {fileID: 3650328042658887334}
+  shootSpeed: 25
 --- !u!114 &7345874784590285518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,12 +620,12 @@ MonoBehaviour:
   elementalEmissionColor: {r: 0.9450981, g: 0.85098046, b: 0.13333334, a: 0}
   emissionStrength: 0
   chargingMaxStrength: 15
-  tolerance: 0.4
+  tolerance: 0
   maxTolerance: 0.1
   manaRatio: 0
   playerManager: {fileID: 5483060495746888710}
-  pulseMin: 10
-  pulseMax: 20
+  pulseMin: 4
+  pulseMax: 12
   pulseSpeed: 8
   elementalBrightness: 20
 --- !u!114 &621749263636301703
