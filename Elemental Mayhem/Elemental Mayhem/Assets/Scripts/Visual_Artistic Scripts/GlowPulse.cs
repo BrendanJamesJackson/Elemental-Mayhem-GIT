@@ -10,6 +10,7 @@ public class GlowPulse : MonoBehaviour
     public Color elementalEmissionColor;
     public float emissionStrength;
     public float chargingMaxStrength;
+    public float chargingMinStrength = 0;
     public float tolerance;
     public float maxTolerance = 0.4f;
 
@@ -54,7 +55,7 @@ public class GlowPulse : MonoBehaviour
         }
         else
         {
-            emissionStrength = math.remap(0,1,0,chargingMaxStrength,manaRatio);
+            emissionStrength = math.remap(0,1,chargingMinStrength,chargingMaxStrength,manaRatio);
             tolerance = math.remap(0,1,0.1f,maxTolerance,manaRatio);
         }
         SetMaterialProperties();

@@ -709,10 +709,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4688388628858845535, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
       propertyPath: m_Name
       value: WaterPriestessPlayer
@@ -1030,17 +1026,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4688388628858845535, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
       propertyPath: m_Name
       value: LightningRoninPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5802633462296090168, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
       propertyPath: m_LocalPosition.x
