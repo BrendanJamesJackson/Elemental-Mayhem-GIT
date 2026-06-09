@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "name": "CharacterSelection",
+    "maps": [
+        {
+            "name": "Actions",
+            "id": "86de3e51-b41a-4f03-876f-386fbf09974c",
+            "actions": [
+                {
+                    "name": "Move/Navigate",
+                    "type": "Value",
+                    "id": "c7d9eefd-5dac-491d-9e90-3ece8834a7da",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "259d5ba8-b486-4fe5-987c-85c589fd94db",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Move/Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
