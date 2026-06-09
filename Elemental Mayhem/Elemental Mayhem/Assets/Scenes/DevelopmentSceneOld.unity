@@ -190,7 +190,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4688388628858845535, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 790796c02be4c474e974f284ad5269b3, type: 3}
       propertyPath: m_Name
@@ -1040,7 +1040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5802633462296090168, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1142,6 +1142,18 @@ PrefabInstance:
     - target: {fileID: 5802633462296090168, guid: 8d26fb4061a886243bb750089ba68e5b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345874784590285518, guid: 8d26fb4061a886243bb750089ba68e5b, type: 3}
+      propertyPath: pulseMin
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345874784590285518, guid: 8d26fb4061a886243bb750089ba68e5b, type: 3}
+      propertyPath: chargingMaxStrength
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364116214851323482, guid: 8d26fb4061a886243bb750089ba68e5b, type: 3}
+      propertyPath: shootSpeed
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

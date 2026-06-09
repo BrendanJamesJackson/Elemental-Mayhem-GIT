@@ -62,6 +62,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5802633462296090168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3470454976017104615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706016260199903278}
+  m_Layer: 6
+  m_Name: DiagonalDirection
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &706016260199903278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470454976017104615}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5802633462296090168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4802709120742927647
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,6 +172,7 @@ Transform:
   - {fileID: 1532180845709914986}
   - {fileID: 8466917030174006484}
   - {fileID: 3650328042658887334}
+  - {fileID: 706016260199903278}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6004648355720289988
@@ -576,7 +608,7 @@ MonoBehaviour:
   maxLife: 100
   currentLife: 0
   maxMana: 300
-  currentMana: 300
+  currentMana: 0
   maxHearts: 3
   currentHearts: 0
   minKnockbackMultiplier: 1
@@ -604,7 +636,7 @@ MonoBehaviour:
   emissionColor: {r: 0.9450981, g: 0.85098046, b: 0.13333334, a: 0}
   elementalEmissionColor: {r: 0.9450981, g: 0.85098046, b: 0.13333334, a: 0}
   emissionStrength: 0
-  chargingMaxStrength: 12
+  chargingMaxStrength: 10
   chargingMinStrength: 0
   tolerance: 0
   maxTolerance: 0.1
@@ -613,7 +645,7 @@ MonoBehaviour:
   pulseMin: 7
   pulseMax: 12
   pulseSpeed: 8
-  elementalBrightness: 20
+  elementalBrightness: 10
 --- !u!114 &621749263636301703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,10 +813,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RangerProjectiles
   basicArrow: {fileID: 7208397239179755784, guid: 0ddaf2f9dbf63be46818b10743f3a988, type: 3}
   arrowShower: {fileID: 7208397239179755784, guid: 2f8e7e61ce6cac5459c82c9d97e61845, type: 3}
-  diagonalArrow: {fileID: 0}
-  thorns: {fileID: 0}
-  spear: {fileID: 0}
+  diagonalArrow: {fileID: 7208397239179755784, guid: 4f2d8e674915b2c4fa65cdb981ffea86, type: 3}
+  thorns: {fileID: 7208397239179755784, guid: f4d99cffac7112447aa5ad0b655bfed0, type: 3}
+  spear: {fileID: 7208397239179755784, guid: c44b63ec5c29299438d443d8dc1e74c1, type: 3}
   shootPoint: {fileID: 3650328042658887334}
+  diagonalDirection: {fileID: 706016260199903278}
   shootSpeed: 25
 --- !u!1 &7046150475455885464
 GameObject:
