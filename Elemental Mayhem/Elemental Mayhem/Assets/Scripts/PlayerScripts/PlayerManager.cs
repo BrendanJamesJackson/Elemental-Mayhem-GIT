@@ -13,7 +13,7 @@ public class PlayerManager : MonoBehaviour
     public float currentMana;
 
     [Header("Hearts (Lives / Stocks)")]
-    public int maxHearts = 3;
+    public int maxHearts = 4;
     public int currentHearts;
 
     [Header("Knockback Scaling")]
@@ -32,6 +32,7 @@ public class PlayerManager : MonoBehaviour
     public bool isInvulnerable = false;
 
     public Animator animator;
+    public PlayerUICommunicator uICommunicator;
 
     [HideInInspector] public GameObject lastAttacker;
 
@@ -134,6 +135,10 @@ public class PlayerManager : MonoBehaviour
         {
             evolveTriggered = false;
         }
+
+        uICommunicator.UpdateDetails(currentHearts, GetLifePercent(),GetManaRatio());
+
+
     }
 
     public bool GetIsElemental()
@@ -197,18 +202,28 @@ public class PlayerManager : MonoBehaviour
         currentMana = 0f;
         isInElementalForm = false;
 
-        
-        transform.position = GameManager.instance.spawnPoints
-            [(Random.Range(0, GameManager.instance.spawnPoints.Length - 1))]
-            .position;
-        
 
+        /*transform.position = GameManager.instance.spawnPoints
+            [(Random.Range(0, GameManager.instance.spawnPoints.Length - 1))]
+            .position;*/
+
+        Transform targetSpawn = GameManager.instance.spawnPoints[
+        Random.Range(0, GameManager.instance.spawnPoints.Length)
+    ];
+
+        isInvulnerable = true;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+        this.GetComponent<SpriteRenderer>().enabled = false;
+
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
+
+            StartCoroutine(MoveToSpawn(rb, targetSpawn.position));
         }
+
 
         StartCoroutine(RespawnInvulnerability());
 
@@ -219,6 +234,30 @@ public class PlayerManager : MonoBehaviour
         isInvulnerable = true;
         yield return new WaitForSeconds(respawnInvulnerabilityTime);
         isInvulnerable = false;
+    }
+
+    IEnumerator MoveToSpawn(Rigidbody2D rb, Vector2 targetPosition)
+    {
+        float duration = 2f; // adjust speed here
+        float elapsed = 0f;
+
+        Vector2 startPos = rb.position;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+
+            float t = elapsed / duration;
+            t = Mathf.SmoothStep(0f, 1f, t); // smooth easing
+
+            Vector2 newPos = Vector2.Lerp(startPos, targetPosition, t);
+            rb.MovePosition(newPos);
+
+            yield return new WaitForFixedUpdate();
+        }
+
+        rb.MovePosition(targetPosition);
+        this.GetComponent<SpriteRenderer>().enabled = true;
     }
 
 

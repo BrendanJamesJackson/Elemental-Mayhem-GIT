@@ -2,14 +2,19 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
+using Unity.Cinemachine;
 
 public class PlayerJoinInitializer : MonoBehaviour
 {
     [Header("Scene References")]
     public Image[] characterIcons;
     public Image[] playerHighlights; // one per player color
-    public Image previewImage;
-    public TMP_Text previewText;
+    public Image [] previewImage;
+    public GameObject[] previewCharacter; 
+    public TMP_Text [] previewText;
+    public GameObject[] joinPrompt; 
+
+
 
     private int playerCount = 0;
 
@@ -23,12 +28,17 @@ public class PlayerJoinInitializer : MonoBehaviour
         selector.AssignUI(
             characterIcons,
             highlight,
-            previewImage,
-            previewText
+            previewImage[playerCount],
+            previewText[playerCount],
+            previewCharacter[playerCount]
         );
+        selector.SetIndex(playerCount);
+
+        joinPrompt[playerCount].SetActive(false);
 
         selector.selectedIndex = 0;
         selector.OnNavigate(Vector2.zero);
+
 
         playerCount++;
     }

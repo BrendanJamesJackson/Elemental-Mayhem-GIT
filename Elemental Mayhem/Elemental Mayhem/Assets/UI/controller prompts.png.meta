@@ -1,0 +1,1703 @@
+fileFormatVersion: 2
+guid: e8bc5a36b33d48d4d9813d3285eec366
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8486967485834707750
+    second: controller prompts_0
+  - first:
+      213: -1971744284079082120
+    second: controller prompts_1
+  - first:
+      213: -2331313396668520590
+    second: controller prompts_2
+  - first:
+      213: 4138076805274883650
+    second: controller prompts_3
+  - first:
+      213: -4058915291659632860
+    second: controller prompts_4
+  - first:
+      213: -6029666698029024364
+    second: controller prompts_5
+  - first:
+      213: -162622889446001126
+    second: controller prompts_6
+  - first:
+      213: 7824519419044519781
+    second: controller prompts_7
+  - first:
+      213: 785082429377734071
+    second: controller prompts_8
+  - first:
+      213: -6901818009901284983
+    second: controller prompts_9
+  - first:
+      213: -8963901876605602058
+    second: controller prompts_10
+  - first:
+      213: 9086381672145960962
+    second: controller prompts_11
+  - first:
+      213: -2279615618849978441
+    second: controller prompts_12
+  - first:
+      213: -1043740529219492797
+    second: controller prompts_13
+  - first:
+      213: 7115831231140435179
+    second: controller prompts_14
+  - first:
+      213: -2726259905067262155
+    second: controller prompts_15
+  - first:
+      213: -7883773277419277728
+    second: controller prompts_16
+  - first:
+      213: -6382626469920106378
+    second: controller prompts_17
+  - first:
+      213: -6649721886636818959
+    second: controller prompts_18
+  - first:
+      213: -7476279073412933534
+    second: controller prompts_19
+  - first:
+      213: -8207007696477091862
+    second: controller prompts_20
+  - first:
+      213: 6710100992855181458
+    second: controller prompts_21
+  - first:
+      213: 919125236430803772
+    second: controller prompts_22
+  - first:
+      213: 4174650525799766956
+    second: controller prompts_23
+  - first:
+      213: 7189459776230833420
+    second: controller prompts_24
+  - first:
+      213: 8941533432913998837
+    second: controller prompts_25
+  - first:
+      213: 7471807924627550233
+    second: controller prompts_26
+  - first:
+      213: -7849094689986059076
+    second: controller prompts_27
+  - first:
+      213: 5228093599835176854
+    second: controller prompts_28
+  - first:
+      213: -1906613303059508378
+    second: controller prompts_29
+  - first:
+      213: -7015484570185012858
+    second: controller prompts_30
+  - first:
+      213: 8348308051492034467
+    second: controller prompts_31
+  - first:
+      213: 5099861162322968085
+    second: controller prompts_32
+  - first:
+      213: -119316711294671242
+    second: controller prompts_33
+  - first:
+      213: -8595170055769425036
+    second: controller prompts_34
+  - first:
+      213: -8399941964988391299
+    second: controller prompts_35
+  - first:
+      213: 5708140549437768562
+    second: controller prompts_36
+  - first:
+      213: -4300583626870031669
+    second: controller prompts_37
+  - first:
+      213: -1531389847100664752
+    second: controller prompts_38
+  - first:
+      213: -3713190875665361065
+    second: controller prompts_39
+  - first:
+      213: -4138745302169375454
+    second: controller prompts_40
+  - first:
+      213: -7266930166628616916
+    second: controller prompts_41
+  - first:
+      213: -1035060339279601549
+    second: controller prompts_42
+  - first:
+      213: -7997945354912281961
+    second: controller prompts_43
+  - first:
+      213: -3189275367328103379
+    second: controller prompts_44
+  - first:
+      213: -882608542245552526
+    second: controller prompts_45
+  - first:
+      213: -8830599878460823542
+    second: controller prompts_46
+  - first:
+      213: -7481431874149662838
+    second: controller prompts_47
+  - first:
+      213: 7183506428841148484
+    second: controller prompts_48
+  - first:
+      213: -6382293923572601756
+    second: controller prompts_49
+  - first:
+      213: -6874860045129093094
+    second: controller prompts_50
+  - first:
+      213: 6395880477999276416
+    second: controller prompts_51
+  - first:
+      213: -1855011437010603051
+    second: controller prompts_52
+  - first:
+      213: -2637619852085547222
+    second: controller prompts_53
+  - first:
+      213: -6124151665509525241
+    second: controller prompts_54
+  - first:
+      213: -1760673800850709480
+    second: controller prompts_55
+  - first:
+      213: -8176692384995226276
+    second: controller prompts_56
+  - first:
+      213: 2353464974498244144
+    second: controller prompts_57
+  - first:
+      213: -2510306944164285377
+    second: controller prompts_58
+  - first:
+      213: -5096578051841626159
+    second: controller prompts_59
+  - first:
+      213: 3338766293872371031
+    second: controller prompts_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: controller prompts_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 124
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623c77566f3c7c570800000000000000
+      internalID: 8486967485834707750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 124
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8753f873505f2a4e0800000000000000
+      internalID: -1971744284079082120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 123
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277a67b41d285afd0800000000000000
+      internalID: -2331313396668520590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 123
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24651bf0ee66d6930800000000000000
+      internalID: 4138076805274883650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 123
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ff93b1c06dba7c0800000000000000
+      internalID: -4058915291659632860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 123
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b3afda512525ca0800000000000000
+      internalID: -6029666698029024364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 122
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16393af75f3ebdf0800000000000000
+      internalID: -162622889446001126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 122
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f5b4e94f6469c60800000000000000
+      internalID: 7824519419044519781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_8
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 122
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5e57a5f4c25ea00800000000000000
+      internalID: 785082429377734071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 122
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981c07f5611d730a0800000000000000
+      internalID: -6901818009901284983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 122
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6377b6cb2d99380800000000000000
+      internalID: -8963901876605602058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_11
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 122
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20041e53dff491e70800000000000000
+      internalID: 9086381672145960962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_12
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 122
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7c30e2cad2d50e0800000000000000
+      internalID: -2279615618849978441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 103
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344a136c483e381f0800000000000000
+      internalID: -1043740529219492797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_14
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 103
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be491cdadc280c260800000000000000
+      internalID: 7115831231140435179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 102
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f53198f016a2ad0800000000000000
+      internalID: -2726259905067262155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_16
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 102
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062f4b569f5379290800000000000000
+      internalID: -7883773277419277728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_17
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 102
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678186eca0b5c67a0800000000000000
+      internalID: -6382626469920106378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_18
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 102
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd3fd30d2177b3a0800000000000000
+      internalID: -6649721886636818959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 101
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26819833bcbee3890800000000000000
+      internalID: -7476279073412933534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 101
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7069e8bf9da1e80800000000000000
+      internalID: -8207007696477091862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_21
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29801262d411f1d50800000000000000
+      internalID: 6710100992855181458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_22
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c331e85688361cc00800000000000000
+      internalID: 919125236430803772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_23
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab51b3f8865fe930800000000000000
+      internalID: 4174650525799766956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_24
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0db239339716c360800000000000000
+      internalID: 7189459776230833420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_25
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 102
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f33e107845b61c70800000000000000
+      internalID: 8941533432913998837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910bf5958b131b760800000000000000
+      internalID: 7471807924627550233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4e9fa37f9621390800000000000000
+      internalID: -7849094689986059076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 79
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f3baeed6bed8840800000000000000
+      internalID: 5228093599835176854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_29
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 79
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6639a137d495a85e0800000000000000
+      internalID: -1906613303059508378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_30
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 79
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68963eaf3fdf3ae90800000000000000
+      internalID: -7015484570185012858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_31
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 79
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a757bc01f52bd370800000000000000
+      internalID: 8348308051492034467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_32
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 79
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e3218f4b856c640800000000000000
+      internalID: 5099861162322968085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_33
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 75
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676638f451a185ef0800000000000000
+      internalID: -119316711294671242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_34
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 75
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47bf9c99f52d7b880800000000000000
+      internalID: -8595170055769425036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_35
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 75
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7068f2a9496d6b80800000000000000
+      internalID: -8399941964988391299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_36
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 75
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273cd313693673f40800000000000000
+      internalID: 5708140549437768562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 76
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcafc811af14154c0800000000000000
+      internalID: -4300583626870031669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_38
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 76
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054dce63c096fbae0800000000000000
+      internalID: -1531389847100664752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 60
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7579eb86298187cc0800000000000000
+      internalID: -3713190875665361065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_40
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 60
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22da06063193096c0800000000000000
+      internalID: -4138745302169375454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_41
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 62
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25f78ae38da62b90800000000000000
+      internalID: -7266930166628616916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_42
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 62
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370e42cfa1ab2a1f0800000000000000
+      internalID: -1035060339279601549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 30
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ac77b1317910190800000000000000
+      internalID: -7997945354912281961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_44
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24418f63fa6db3d0800000000000000
+      internalID: -3189275367328103379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_45
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 25
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e7ab3053850c3f0800000000000000
+      internalID: -882608542245552526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_46
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a082cb27238637580800000000000000
+      internalID: -8830599878460823542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_47
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 25
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f360a495d9c2890800000000000000
+      internalID: -7481431874149662838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_48
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440cfc48901f0b360800000000000000
+      internalID: 7183506428841148484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_49
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c2259cd798d67a0800000000000000
+      internalID: -6382293923572601756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_50
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10fd89a6379790a0800000000000000
+      internalID: -6874860045129093094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_51
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 37
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081a00d686bb2c850800000000000000
+      internalID: 6395880477999276416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_52
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 37
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d332b22deca146e0800000000000000
+      internalID: -1855011437010603051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_53
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 37
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f2cef18ba456bd0800000000000000
+      internalID: -2637619852085547222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_54
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 37
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70910b2e184a20ba0800000000000000
+      internalID: -6124151665509525241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_55
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 38
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814e4fea184d097e0800000000000000
+      internalID: -1760673800850709480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_56
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 38
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5dc7ba099d868e80800000000000000
+      internalID: -8176692384995226276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_57
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 18
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036aa44dcef29a020800000000000000
+      internalID: 2353464974498244144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_58
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 25
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3434eb6229992dd0800000000000000
+      internalID: -2510306944164285377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_59
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 24
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df6de1c3415549b0800000000000000
+      internalID: -5096578051841626159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller prompts_60
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 24
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7556f46314ea55e20800000000000000
+      internalID: 3338766293872371031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a015e00cf58bd88459811adc1ed2aff3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      controller prompts_0: 8486967485834707750
+      controller prompts_1: -1971744284079082120
+      controller prompts_10: -8963901876605602058
+      controller prompts_11: 9086381672145960962
+      controller prompts_12: -2279615618849978441
+      controller prompts_13: -1043740529219492797
+      controller prompts_14: 7115831231140435179
+      controller prompts_15: -2726259905067262155
+      controller prompts_16: -7883773277419277728
+      controller prompts_17: -6382626469920106378
+      controller prompts_18: -6649721886636818959
+      controller prompts_19: -7476279073412933534
+      controller prompts_2: -2331313396668520590
+      controller prompts_20: -8207007696477091862
+      controller prompts_21: 6710100992855181458
+      controller prompts_22: 919125236430803772
+      controller prompts_23: 4174650525799766956
+      controller prompts_24: 7189459776230833420
+      controller prompts_25: 8941533432913998837
+      controller prompts_26: 7471807924627550233
+      controller prompts_27: -7849094689986059076
+      controller prompts_28: 5228093599835176854
+      controller prompts_29: -1906613303059508378
+      controller prompts_3: 4138076805274883650
+      controller prompts_30: -7015484570185012858
+      controller prompts_31: 8348308051492034467
+      controller prompts_32: 5099861162322968085
+      controller prompts_33: -119316711294671242
+      controller prompts_34: -8595170055769425036
+      controller prompts_35: -8399941964988391299
+      controller prompts_36: 5708140549437768562
+      controller prompts_37: -4300583626870031669
+      controller prompts_38: -1531389847100664752
+      controller prompts_39: -3713190875665361065
+      controller prompts_4: -4058915291659632860
+      controller prompts_40: -4138745302169375454
+      controller prompts_41: -7266930166628616916
+      controller prompts_42: -1035060339279601549
+      controller prompts_43: -7997945354912281961
+      controller prompts_44: -3189275367328103379
+      controller prompts_45: -882608542245552526
+      controller prompts_46: -8830599878460823542
+      controller prompts_47: -7481431874149662838
+      controller prompts_48: 7183506428841148484
+      controller prompts_49: -6382293923572601756
+      controller prompts_5: -6029666698029024364
+      controller prompts_50: -6874860045129093094
+      controller prompts_51: 6395880477999276416
+      controller prompts_52: -1855011437010603051
+      controller prompts_53: -2637619852085547222
+      controller prompts_54: -6124151665509525241
+      controller prompts_55: -1760673800850709480
+      controller prompts_56: -8176692384995226276
+      controller prompts_57: 2353464974498244144
+      controller prompts_58: -2510306944164285377
+      controller prompts_59: -5096578051841626159
+      controller prompts_6: -162622889446001126
+      controller prompts_60: 3338766293872371031
+      controller prompts_7: 7824519419044519781
+      controller prompts_8: 785082429377734071
+      controller prompts_9: -6901818009901284983
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

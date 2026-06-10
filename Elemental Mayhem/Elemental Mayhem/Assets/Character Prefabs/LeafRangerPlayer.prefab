@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 6173584217980542178}
   - component: {fileID: 1203093390945634750}
   - component: {fileID: 8364116214851323482}
+  - component: {fileID: 4543240102488022287}
   m_Layer: 6
   m_Name: LeafRangerPlayer
   m_TagString: Untagged
@@ -609,7 +610,7 @@ MonoBehaviour:
   currentLife: 0
   maxMana: 300
   currentMana: 0
-  maxHearts: 3
+  maxHearts: 4
   currentHearts: 0
   minKnockbackMultiplier: 1
   maxKnockbackMultiplier: 2
@@ -618,6 +619,7 @@ MonoBehaviour:
   isEliminated: 0
   isInvulnerable: 0
   animator: {fileID: 204041885289025364}
+  uICommunicator: {fileID: 4543240102488022287}
   lastAttacker: {fileID: 0}
   evolveTriggered: 0
 --- !u!114 &7345874784590285518
@@ -819,6 +821,20 @@ MonoBehaviour:
   shootPoint: {fileID: 3650328042658887334}
   diagonalDirection: {fileID: 706016260199903278}
   shootSpeed: 25
+--- !u!114 &4543240102488022287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5192178135841551423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d320b55d6a719f94e8f2f20515a4f4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerUICommunicator
+  uIHandler: {fileID: 0}
+  charIndex: 0
 --- !u!1 &7046150475455885464
 GameObject:
   m_ObjectHideFlags: 0

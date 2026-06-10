@@ -8,6 +8,7 @@ public class PlayerCharacterSelector : MonoBehaviour
 {
     [Header("Selection Data")]
     public int selectedIndex = 0;
+    public int playerIndex;
 
     [Header("UI References (Injected on Join)")]
     public Image[] characterIcons; // 10 icons
@@ -16,11 +17,21 @@ public class PlayerCharacterSelector : MonoBehaviour
     [Header("Preview UI")]
     public Image previewImage;
     public TMP_Text previewName;
+    public GameObject previewCharacter;
+
+    public string[] charNames;
+    public Sprite[] charSprites; 
 
 
     private bool isMoving;
     private float moveCooldown = 0.2f;
     private float cooldownTimer;
+
+    public PlayerInput playerInput;
+
+
+    private bool lockedIn = false;
+
 
     private void Start()
     {
@@ -35,9 +46,36 @@ public class PlayerCharacterSelector : MonoBehaviour
     }
 
 
+    public void Submit(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            lockedIn = true;
+            CharacterSelectionManager.instance.AddPlayer(playerIndex, selectedIndex, playerInput.devices[0]);
+            Debug.Log(playerInput.devices[0]);
+        }
+    }
+
+    public void Cancel(InputAction.CallbackContext context)
+    {
+        lockedIn = false;
+        CharacterSelectionManager.instance.ChangeSelection(playerIndex);
+    }
+
+    public void BeginGame(InputAction.CallbackContext context)
+    {
+        CharacterSelectionManager.instance.StartGame();
+
+    }
+
+
     // Called by input system (left stick / dpad)
     public void OnNavigate(Vector2 input)
     {
+
+        if (lockedIn)
+            return;
+
         if (isMoving)
             return;
 
@@ -87,17 +125,26 @@ public class PlayerCharacterSelector : MonoBehaviour
                 characterIcons[selectedIndex].transform.position;
         }
 
-        // OPTIONAL: preview update hook (you'll wire this to ScriptableObjects later)
-        if (previewName != null)
-            previewName.text = $"Character {selectedIndex}";
+        previewImage.sprite = charSprites[selectedIndex];
+        previewName.text = charNames[selectedIndex];
+        previewCharacter.GetComponent<Animator>().SetFloat("CharIndex", (selectedIndex));
     }
 
-    public void AssignUI(Image[] icons, Image highlight, Image previewImg, TMP_Text previewTxt)
+    public void SetIndex(int index)
+    {
+        playerIndex = index;
+    }
+
+    public void AssignUI(Image[] icons, Image highlight, Image previewImg, TMP_Text previewTxt, GameObject previewChar)
     {
         characterIcons = icons;
         selectionHighlight = highlight;
+        selectionHighlight.gameObject.SetActive(true);
         previewImage = previewImg;
         previewName = previewTxt;
+        previewCharacter = previewChar;
+
+        previewImage.gameObject.SetActive(true);
 
         UpdateSelectionVisuals();
     }

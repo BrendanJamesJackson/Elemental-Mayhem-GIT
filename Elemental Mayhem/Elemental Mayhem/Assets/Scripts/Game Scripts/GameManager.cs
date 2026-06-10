@@ -45,6 +45,10 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void SetSpawn(Transform transform, int index)
+    {
+        transform.position = spawnPoints[index].position;
+    }
 
 
 

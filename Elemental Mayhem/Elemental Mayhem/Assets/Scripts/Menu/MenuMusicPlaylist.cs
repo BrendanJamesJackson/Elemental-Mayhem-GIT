@@ -15,6 +15,9 @@ public class MenuMusicPlaylist : MonoBehaviour
 
     private void Start()
     {
+        Shuffle(playlist);
+
+
         if (playlist.Length == 0)
         {
             Debug.LogWarning("No music clips assigned to playlist.");
@@ -23,6 +26,20 @@ public class MenuMusicPlaylist : MonoBehaviour
 
         PlayTrack(currentTrackIndex);
     }
+
+
+    public static void Shuffle(AudioClip [] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            // Pick a random index from the current element to the end
+            int randomIndex = Random.Range(i, array.Length);
+
+            // Swap elements using a C# tuple literal
+            (array[i], array[randomIndex]) = (array[randomIndex], array[i]);
+        }
+    }
+
 
     private void Update()
     {

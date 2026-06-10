@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 621749263636301703}
   - component: {fileID: 6173584217980542178}
   - component: {fileID: 1203093390945634750}
+  - component: {fileID: 1635594841842142422}
   m_Layer: 6
   m_Name: GroundMonkPlayer
   m_TagString: Untagged
@@ -300,6 +301,7 @@ MonoBehaviour:
   floorCollider: {fileID: 4643396282739325815}
   hasDash: 0
   hasRoll: 1
+  hasElementalMovementAbility: 0
   dashSpeed: 15
   rollSpeed: 15
   animator: {fileID: 204041885289025364}
@@ -576,7 +578,7 @@ MonoBehaviour:
   currentLife: 0
   maxMana: 300
   currentMana: 300
-  maxHearts: 3
+  maxHearts: 4
   currentHearts: 0
   minKnockbackMultiplier: 1
   maxKnockbackMultiplier: 2
@@ -585,6 +587,7 @@ MonoBehaviour:
   isEliminated: 0
   isInvulnerable: 0
   animator: {fileID: 204041885289025364}
+  uICommunicator: {fileID: 1635594841842142422}
   lastAttacker: {fileID: 0}
   evolveTriggered: 0
 --- !u!114 &5706459462246875832
@@ -619,7 +622,9 @@ MonoBehaviour:
   elementalEmissionColor: {r: 0.9450981, g: 0.85098046, b: 0.13333334, a: 0}
   emissionStrength: 0
   chargingMaxStrength: 15
+  chargingMinStrength: 0
   tolerance: 0
+  maxTolerance: 0.4
   manaRatio: 0
   playerManager: {fileID: 5483060495746888710}
   pulseMin: 4
@@ -779,6 +784,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1635594841842142422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5192178135841551423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d320b55d6a719f94e8f2f20515a4f4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerUICommunicator
+  uIHandler: {fileID: 0}
+  charIndex: 0
 --- !u!1 &7046150475455885464
 GameObject:
   m_ObjectHideFlags: 0
