@@ -13,5 +13,6 @@ public class PostHitHandler : MonoBehaviour
     {
         playerCombat.EndAttack();
         playerMovement.EnableMovement();
+        playerMovement.EndMovementAbility();
     }
 }

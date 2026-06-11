@@ -12,8 +12,10 @@ public class PlayerJoinInitializer : MonoBehaviour
     public Image [] previewImage;
     public GameObject[] previewCharacter; 
     public TMP_Text [] previewText;
-    public GameObject[] joinPrompt; 
+    public GameObject[] joinPrompt;
 
+    public GameObject[] ConfirmBtn;
+    public GameObject[] CancelBtn;
 
 
     private int playerCount = 0;
@@ -30,7 +32,9 @@ public class PlayerJoinInitializer : MonoBehaviour
             highlight,
             previewImage[playerCount],
             previewText[playerCount],
-            previewCharacter[playerCount]
+            previewCharacter[playerCount],
+            ConfirmBtn[playerCount],
+            CancelBtn[playerCount]
         );
         selector.SetIndex(playerCount);
 

@@ -18,6 +18,8 @@ public class PlayerCharacterSelector : MonoBehaviour
     public Image previewImage;
     public TMP_Text previewName;
     public GameObject previewCharacter;
+    public GameObject ConfirmBtn;
+    public GameObject CancelBtn;
 
     public string[] charNames;
     public Sprite[] charSprites; 
@@ -53,13 +55,20 @@ public class PlayerCharacterSelector : MonoBehaviour
             lockedIn = true;
             CharacterSelectionManager.instance.AddPlayer(playerIndex, selectedIndex, playerInput.devices[0]);
             Debug.Log(playerInput.devices[0]);
+            ConfirmBtn.SetActive(false);
+            CancelBtn.SetActive(true);
         }
     }
 
     public void Cancel(InputAction.CallbackContext context)
     {
-        lockedIn = false;
-        CharacterSelectionManager.instance.ChangeSelection(playerIndex);
+        if (context.performed)
+        {
+            lockedIn = false;
+            CharacterSelectionManager.instance.ChangeSelection(playerIndex);
+            ConfirmBtn.SetActive(true);
+            CancelBtn.SetActive(false);
+        }
     }
 
     public void BeginGame(InputAction.CallbackContext context)
@@ -135,7 +144,7 @@ public class PlayerCharacterSelector : MonoBehaviour
         playerIndex = index;
     }
 
-    public void AssignUI(Image[] icons, Image highlight, Image previewImg, TMP_Text previewTxt, GameObject previewChar)
+    public void AssignUI(Image[] icons, Image highlight, Image previewImg, TMP_Text previewTxt, GameObject previewChar, GameObject confirm, GameObject cancel)
     {
         characterIcons = icons;
         selectionHighlight = highlight;
@@ -143,6 +152,8 @@ public class PlayerCharacterSelector : MonoBehaviour
         previewImage = previewImg;
         previewName = previewTxt;
         previewCharacter = previewChar;
+        ConfirmBtn = confirm;
+        CancelBtn = cancel;
 
         previewImage.gameObject.SetActive(true);
 

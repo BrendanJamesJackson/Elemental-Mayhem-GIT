@@ -43,9 +43,9 @@ public class PlayerCombat : MonoBehaviour
     private bool queueNextAttack = false;
 
 
-    private Coroutine blockRoutine;
+    public Coroutine blockRoutine;
     public float blockDelay = 0.1f;
-    private bool blockActive = false;
+    public bool blockActive = false;
 
 
     public bool IsAttacking()
@@ -224,13 +224,15 @@ public class PlayerCombat : MonoBehaviour
             return;
 
         isBlocking = true;
+        playerManager.SetInvulnerability(true);
         animator.SetBool("IsBlocking", true);
     }
 
-    void EndBlock()
+    public void EndBlock()
     {
         isBlocking = false;
         animator.SetBool("IsBlocking", false);
+        playerManager.SetInvulnerability(false);
     }
 
     //Combo based attacking

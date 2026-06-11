@@ -34,9 +34,13 @@ public class PlayerManager : MonoBehaviour
     public Animator animator;
     public PlayerUICommunicator uICommunicator;
 
+    public PlayerCombat playerCombat;
+
     [HideInInspector] public GameObject lastAttacker;
 
     public bool evolveTriggered = false;
+
+    public int charIndex;
 
     private void Awake()
     {
@@ -45,6 +49,7 @@ public class PlayerManager : MonoBehaviour
         currentHearts = maxHearts;
 
         knockbackReceiver = GetComponent<KnockbackReceiver>();
+        playerCombat = GetComponent<PlayerCombat>();
     }
 
     private void Start()
@@ -86,7 +91,25 @@ public class PlayerManager : MonoBehaviour
         if (context.performed)
         {
             evolveTriggered = true;
+
+            if (playerCombat.blockRoutine != null)
+            {
+                StopCoroutine(playerCombat.blockRoutine);
+            }
+
+            if (playerCombat.blockActive)
+            {
+                playerCombat.EndBlock();
+                playerCombat.blockActive = false;
+            }
+
+
+            SetInvulnerability(false);
+            
+            
+            
             isInElementalForm = true;
+            SpendMana();
         }
     }
 
@@ -101,14 +124,36 @@ public class PlayerManager : MonoBehaviour
         lastAttacker = attacker;
 
         //Reduce life
-        currentLife -= baseDamage;
+        float tempDamageValue;
+
+        if (isInElementalForm)
+        {
+            tempDamageValue = baseDamage * 0.5f;
+        }
+        else
+        {
+            tempDamageValue= baseDamage;
+        }
+
+            currentLife -= tempDamageValue;
         currentLife = Mathf.Max(currentLife, 0);
 
         //Calc knockback
         float lifePercent = currentLife / maxLife;
         float knockbackMultiplier = Mathf.Lerp(maxKnockbackMultiplier, minKnockbackMultiplier, lifePercent);
 
-        float finalKnockback = baseKnockback * knockbackMultiplier;
+
+        float tempKnockbackValue;
+        if (isInElementalForm)
+        {
+            tempKnockbackValue = baseKnockback * 0.5f;
+        }
+        else
+        {
+            tempKnockbackValue= baseKnockback;
+        }
+
+        float finalKnockback = tempKnockbackValue * knockbackMultiplier;
         Debug.Log("Base Knockback: " + baseKnockback);
         //Apply knockback
         if (knockbackReceiver != null)
@@ -122,7 +167,7 @@ public class PlayerManager : MonoBehaviour
             PlayerManager attackerManager = attacker.GetComponent<PlayerManager>();
             if (attackerManager != null)
             {
-                attackerManager.GainMana(baseDamage * 2f);
+                attackerManager.GainMana(tempDamageValue * 2f);
             }
         }
     }
@@ -171,6 +216,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         currentHearts--;
+        uICommunicator.UpdateDetails(currentHearts, GetLifePercent(), GetManaRatio());
 
         Debug.Log(gameObject.name + " lost a heart. Remaining: " + currentHearts);
 
@@ -234,6 +280,12 @@ public class PlayerManager : MonoBehaviour
         isInvulnerable = true;
         yield return new WaitForSeconds(respawnInvulnerabilityTime);
         isInvulnerable = false;
+    }
+
+    public void SetInvulnerability(bool flag)
+    {
+        isInvulnerable = flag;
+
     }
 
     IEnumerator MoveToSpawn(Rigidbody2D rb, Vector2 targetPosition)

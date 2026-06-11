@@ -317,7 +317,7 @@ MonoBehaviour:
   airControlMultiplier: 0.6
   canMove: 1
   isInHitstun: 0
-  jumpForce: 14
+  jumpForce: 16
   gravityScale: 3
   fallMultiplier: 2.5
   coyoteTime: 0.1
@@ -334,8 +334,8 @@ MonoBehaviour:
   hasDash: 1
   hasRoll: 1
   hasElementalMovementAbility: 0
-  dashSpeed: 15
-  rollSpeed: 15
+  dashSpeed: 16
+  rollSpeed: 16
   animator: {fileID: 204041885289025364}
   playerCombat: {fileID: 4467899277021719142}
   downInput: 0
@@ -549,17 +549,17 @@ MonoBehaviour:
   playerManager: {fileID: 5483060495746888710}
   isComboCharacter: 0
   damage:
-  - 1
-  - 2
   - 3
-  - 4
-  - 4
+  - 6
+  - 9
+  - 12
+  - 12
   knockback:
   - 5
   - 10
   - 15
-  - 10
   - 20
+  - 10
   airAttackIndex: 0
   specialAttackIndex: 4
   rangedSpecialAttackIndex: 5
@@ -572,6 +572,7 @@ MonoBehaviour:
   currentAttackIndex: 0
   isAttacking: 0
   blockDelay: 0.05
+  blockActive: 0
 --- !u!95 &204041885289025364
 Animator:
   serializedVersion: 7
@@ -620,8 +621,10 @@ MonoBehaviour:
   isInvulnerable: 0
   animator: {fileID: 204041885289025364}
   uICommunicator: {fileID: 4543240102488022287}
+  playerCombat: {fileID: 0}
   lastAttacker: {fileID: 0}
   evolveTriggered: 0
+  charIndex: 1
 --- !u!114 &7345874784590285518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,33 +679,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAudio
   audioClips:
-  - {fileID: 8300000, guid: b3c8561e9628d6f41ac03ad3af2bdb78, type: 3}
-  - {fileID: 8300000, guid: 0186ef4c8c5bf4442b621d030e31e699, type: 3}
-  - {fileID: 8300000, guid: 3c831521be7c017419d544f6f955b525, type: 3}
-  - {fileID: 8300000, guid: 77beda494d7509d45af0c29d1601e7e0, type: 3}
-  - {fileID: 8300000, guid: 04aa2a30835537848ae52948782ec389, type: 3}
-  - {fileID: 8300000, guid: f8045087db37a8c4880c7e0c63216f00, type: 3}
-  - {fileID: 8300000, guid: fb0a5466c998e07459fc716d200651a2, type: 3}
-  - {fileID: 8300000, guid: 26b02001089a6334e9e294e6abb383d2, type: 3}
-  - {fileID: 8300000, guid: 8326f1ae39b490f4999fcf3f3efb1ea2, type: 3}
-  - {fileID: 8300000, guid: 677dcfb35a66a154ba9023a2dd6e4620, type: 3}
-  - {fileID: 8300000, guid: a12b8d50c3d512a4d9653ce12ff7ca9e, type: 3}
-  - {fileID: 8300000, guid: fbb88e47871ca844788f5efa6451bf50, type: 3}
-  - {fileID: 8300000, guid: 7210f383cfc2adf49b39377009405401, type: 3}
+  - {fileID: 8300000, guid: f4f8c6a63678e574689381dd86e29d94, type: 3}
+  - {fileID: 8300000, guid: 1b2b5852d5e3ce744b1e2d713ea99903, type: 3}
+  - {fileID: 8300000, guid: 75796596449ba484285faddf82862018, type: 3}
+  - {fileID: 8300000, guid: bee0d188a110e434599d7e282af7c1d9, type: 3}
+  - {fileID: 8300000, guid: bde01e056c6349045a11160a1d2a37dc, type: 3}
   clipPitchRanges:
   - {x: 0.8, y: 1.2}
   - {x: 0.8, y: 1.2}
-  - {x: 1, y: 1}
   - {x: 0.8, y: 1.2}
-  - {x: 0.5, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
+  - {x: 0.8, y: 1.2}
+  - {x: 0.8, y: 1.2}
   audioSource: {fileID: 1203093390945634750}
 --- !u!82 &1203093390945634750
 AudioSource:

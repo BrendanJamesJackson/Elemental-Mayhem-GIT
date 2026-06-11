@@ -366,7 +366,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isDashing = true;
         //canMove = false;
-
+        playerManager.SetInvulnerability(true);
         float direction = Mathf.Sign(transform.localScale.x);
         rb.linearVelocity = new Vector2(direction * dashSpeed, 0f);
         animator.SetTrigger("Dash");
@@ -376,6 +376,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isRolling = true;
         //canMove = false;
+        playerManager.SetInvulnerability(true);
 
         float direction = Mathf.Sign(transform.localScale.x);
         rb.linearVelocity = new Vector2(direction * rollSpeed, 0f);
@@ -390,6 +391,8 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
 
         rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        playerManager.SetInvulnerability(false);
+
     }
 
     private void OnDrawGizmos()

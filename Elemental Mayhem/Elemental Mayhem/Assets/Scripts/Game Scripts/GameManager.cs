@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -79,7 +80,9 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log(winner.name + " wins the match!");
 
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
+        PlayerPrefs.SetInt("winner",winner.charIndex);
+        SceneManager.LoadScene(5);
     }
 
     public void RegisterFighter(PlayerManager player)

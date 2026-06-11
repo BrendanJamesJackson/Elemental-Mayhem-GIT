@@ -517,17 +517,17 @@ MonoBehaviour:
   playerManager: {fileID: 5483060495746888710}
   isComboCharacter: 1
   damage:
-  - 1
-  - 2
   - 3
-  - 4
-  - 4
+  - 6
+  - 9
+  - 12
+  - 12
   knockback:
   - 5
   - 10
   - 15
-  - 10
   - 20
+  - 10
   airAttackIndex: 0
   specialAttackIndex: 4
   rangedSpecialAttackIndex: 5
@@ -540,6 +540,7 @@ MonoBehaviour:
   currentAttackIndex: 0
   isAttacking: 0
   blockDelay: 0.05
+  blockActive: 0
 --- !u!95 &204041885289025364
 Animator:
   serializedVersion: 7
@@ -588,8 +589,10 @@ MonoBehaviour:
   isInvulnerable: 0
   animator: {fileID: 204041885289025364}
   uICommunicator: {fileID: 4192858871420789993}
+  playerCombat: {fileID: 0}
   lastAttacker: {fileID: 0}
   evolveTriggered: 0
+  charIndex: 0
 --- !u!114 &5706459462246875832
 MonoBehaviour:
   m_ObjectHideFlags: 0

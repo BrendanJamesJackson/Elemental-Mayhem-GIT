@@ -8,8 +8,19 @@ public class MenuMusicPlaylist : MonoBehaviour
     private AudioSource audioSource;
     private int currentTrackIndex = 0;
 
+    public static MenuMusicPlaylist instance;
+
     private void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -25,6 +36,8 @@ public class MenuMusicPlaylist : MonoBehaviour
         }
 
         PlayTrack(currentTrackIndex);
+
+        
     }
 
 

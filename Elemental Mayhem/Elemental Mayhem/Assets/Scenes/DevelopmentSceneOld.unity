@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5483060495746888710, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
+      propertyPath: isInElementalForm
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5802633462296090168, guid: 71e62e9d35a6b4841aadcc6cd2f1fbc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.1428566
@@ -397,6 +401,10 @@ PrefabInstance:
     - target: {fileID: 5192178135841551423, guid: baf4b720712426847a3a2c7df9533be0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483060495746888710, guid: baf4b720712426847a3a2c7df9533be0, type: 3}
+      propertyPath: isInElementalForm
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5802633462296090168, guid: baf4b720712426847a3a2c7df9533be0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -711,7 +719,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4688388628858845535, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
       propertyPath: m_Name
@@ -760,6 +768,22 @@ PrefabInstance:
     - target: {fileID: 5802633462296090168, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173584217980542178, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
+      propertyPath: clipPitchRanges.Array.data[0].x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173584217980542178, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
+      propertyPath: clipPitchRanges.Array.data[0].y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173584217980542178, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
+      propertyPath: clipPitchRanges.Array.data[1].x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173584217980542178, guid: 3d05cb3f077f09a43a8026cabc24c0e9, type: 3}
+      propertyPath: clipPitchRanges.Array.data[1].y
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1013,6 +1037,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6173584217980542178, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
+      propertyPath: clipPitchRanges.Array.data[1].x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173584217980542178, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
+      propertyPath: clipPitchRanges.Array.data[1].y
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7345874784590285518, guid: aa45ebd0a078b734bac438c6e835d827, type: 3}
       propertyPath: maxTolerance
       value: 0.1
@@ -1032,7 +1064,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4688388628858845535, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 4e463eca03a3b7143b78373edd0517c9, type: 3}
       propertyPath: m_Name
@@ -1101,6 +1133,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5192178135841551423, guid: 8d26fb4061a886243bb750089ba68e5b, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483060495746888710, guid: 8d26fb4061a886243bb750089ba68e5b, type: 3}
+      propertyPath: isInElementalForm
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5802633462296090168, guid: 8d26fb4061a886243bb750089ba68e5b, type: 3}
